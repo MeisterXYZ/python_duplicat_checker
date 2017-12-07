@@ -21,8 +21,10 @@ def get_string_hash (s):
 def get_table_index (hash):
     return hash & (hashTableSize - 1)
 
+
 #start time measuring
 start = time.time()
+
 
 #set variables:
 colCount = 0
@@ -35,18 +37,9 @@ try:
 except IOError:
     print 'cannot open', filename
 else:
-    listSize = 0
-    for line in f:
-        line = line[:-1]
-        if line != 'secquenceString':
-            listSize+=1  
-    hashTableSize = int(math.floor(listSize * 1.3))
-    f.close()
-
-    print 'tableSize is ', listSize
-
     #initialize hash table
-    table = [None] * hashTableSize 
+    hashTableSize = 8
+    table = [None] * hashTableSize
     processed = 0 
 
     # To-Do: Use the Sequence File Format!
@@ -59,24 +52,40 @@ else:
                 # calculate index by using the upper hash-function
                 index = get_table_index(get_string_hash(line))
                 inserted = False 
+                perturbation = -1
                 while not inserted:
                     if table[index] == None:
                         #no collision, no duplicate -> good to go. Insert value in hash-table.
                         table[index] = line
                         inserted = True
-                        processed +=1 #for visualisation
+                        processed +=1
                     else:
-                        #already an entry at index-position: Using linear probing:
+                        #already an entry at index-position: Using phyton probing:
                         #first check if it's a actual duplicate
                         if table[index] == line:
                             #handle the duplicate: for first moment just count the duplicates.
                             dupCount += 1
-                            processed +=1 #for visualisation
+                            processed +=1
                             inserted = True
                         else:
                             #value isn't a duplicate -> So it's another link -> set index to next position
                             colCount +=1 
-                            index = (index + 1) % hashTableSize
+                            if perturbation == -1:
+                                perturbation = get_string_hash(line)
+                            else:
+                                perturbation = perturbation >> 5
+                            index = ((5*index)+1+perturbation) % hashTableSize
+                if processed > (2./3)*hashTableSize:
+                    print "processed", processed
+                    hashTableSize = hashTableSize * 2 
+                    print hashTableSize
+                    newTable = [None] * hashTableSize
+                    for i in table:
+                        if i != None:
+                            newTable[get_table_index(get_string_hash(i))]
+                    table = newTable
+
+                """
                 if (processed / float(listSize) * 100) % 10 == 0:
                     currTime = time.time()
                     #Readable version:
@@ -85,6 +94,7 @@ else:
                     #print str(int(processed / float(listSize) * 100)) + '    '+ str(currTime- start)
                     #portable version 2:
                     print str(currTime- start) + '    '+  str(int(processed / float(listSize) * 100)) 
+                """
             else:
                 # To-Do: handle the sequence-File-format corretly
                 pass
