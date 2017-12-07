@@ -77,7 +77,8 @@ else:
                             index = ((5*index)+1+perturbation) % hashTableSize
                 if processed > (2./3)*hashTableSize:
                     print "processed", processed
-                    hashTableSize = hashTableSize * 2 
+                    while not 4 * processed < hashTableSize: 
+                        hashTableSize = hashTableSize * 2
                     print hashTableSize
                     newTable = [None] * hashTableSize
                     for i in table:
