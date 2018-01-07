@@ -140,18 +140,21 @@ else:
     #stop time measuring
     end = time.time()
 
-    print "collisions: " , colCount
-    print "dups found: ", dupCount
-    print "elapsed time: ", end-start
-    print "table initialize time: ", t_iniTable
-    print "hashing time: ", t_hashing
-    print "collision handling time: ", t_collhand
-    print "resize time: ", t_resize
-    print "evaluation time: ", t_evaluations
+    #print "collisions: " , colCount
+    #print "dups found: ", dupCount
+    str = str(end-start)
+    print str.replace('.',',')
+    #print "table initialize time: ", t_iniTable
+    #print "hashing time: ", t_hashing
+    #print "collision handling time: ", t_collhand
+    #print "resize time: ", t_resize
+    #print "evaluation time: ", t_evaluations
 
     #print result to file
+    '''
     with open ('Output_1_pyCollHand.txt' , 'w') as f:
         for i in table:
             if i != None:
                 f.write(i)
                 f.write('\n')
+    '''
