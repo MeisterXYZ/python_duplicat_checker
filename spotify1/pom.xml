@@ -12,6 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -22,9 +24,10 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-	  <groupId>se.michaelthelin.spotify</groupId>
-	  <artifactId>spotify-web-api-java</artifactId>
-	  <version>1.5.0</version>
-	</dependency>
+      <groupId>se.michaelthelin.spotify</groupId>
+      <artifactId>spotify-web-api-java</artifactId>
+      <version>1.5.0</version>
+    </dependency>
   </dependencies>
+
 </project>

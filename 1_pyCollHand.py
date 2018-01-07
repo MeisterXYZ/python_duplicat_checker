@@ -22,11 +22,11 @@ def get_table_index (hash):
     return hash & (hashTableSize - 1)
 
 #time contingents
-t_resize = 0
-t_hashing = 0
-t_collhand = 0
-t_iniTable = 0
-t_evaluations = 0
+#t_resize = 0
+#t_hashing = 0
+#t_collhand = 0
+#t_iniTable = 0
+#t_evaluations = 0
 
 #start time measuring
 start = time.time()
@@ -43,11 +43,11 @@ except IOError:
     print 'cannot open', filename
 else:
     #initialize hash table
-    t_it_start = time.time()
+    #t_it_start = time.time()
     hashTableSize = 8
     table = [None] * hashTableSize
-    t_it_end = time.time()
-    t_iniTable += (t_it_end - t_it_start)
+    #t_it_end = time.time()
+    #t_iniTable += (t_it_end - t_it_start)
     processed = 0 
 
     # processing the input
@@ -55,7 +55,7 @@ else:
         # for handling the Sequence File Format
         isSequenceString = False
         for line in f:
-            t_ev_start = time.time()
+            #t_ev_start = time.time()
             #getting rid of line-break char \n
             line = line[:-1]
             #handling the Sequence File Format
@@ -69,12 +69,12 @@ else:
                     raise ValueError('Not all of the file-content was in "secquenceString"-format.')
                 else:
                     # calculate index by using the upper hash-function
-                    t_h_start = time.time()
-                    index = get_table_index(hash(line))
+                    #t_h_start = time.time()
+                    index = get_table_index(get_string_hash(line))
                     
                     t_h_end = time.time()
-                    t_hashing += (t_h_end - t_h_start)
-                    t_ev_start += (t_h_end - t_h_start)
+                    #t_hashing += (t_h_end - t_h_start)
+                    #t_ev_start += (t_h_end - t_h_start)
                     inserted = False 
                     perturbation = -1
                     while not inserted:
@@ -93,20 +93,20 @@ else:
                                 inserted = True
                             else:
                                 #value isn't a duplicate -> So it's another link -> set index to next position
-                                t_c_start = time.time()
+                                #t_c_start = time.time()
                                 colCount +=1 
                                 if perturbation == -1:
                                     perturbation = hash(line)
                                 else:
                                     perturbation = perturbation >> 5
                                 index = ((5*index)+1+perturbation) % hashTableSize
-                                t_c_end = time.time()
-                                t_ev_start += (t_c_end - t_c_start)
-                                t_collhand += (t_c_end - t_c_start)
+                                #t_c_end = time.time()
+                                #t_ev_start += (t_c_end - t_c_start)
+                                #t_collhand += (t_c_end - t_c_start)
                     
                     #resize table if 2/3-Limit is passed
                     if processed > (2./3)*hashTableSize:
-                        t_r_start = time.time()
+                        #t_r_start = time.time()
                         #calculate new table size
                         while not 4 * processed < hashTableSize: 
                             hashTableSize = hashTableSize * 2
@@ -130,11 +130,11 @@ else:
                                         inserted = True
                         #assign new table to variavle
                         table = newTable
-                        t_r_end = time.time()
-                        t_ev_start += (t_r_end -t_r_start)
-                        t_resize += (t_r_end -t_r_start)
-            t_ev_end = time.time()
-            t_evaluations += (t_ev_end - t_ev_start)
+                        #t_r_end = time.time()
+                        #t_ev_start += (t_r_end -t_r_start)
+                        #t_resize += (t_r_end -t_r_start)
+            #t_ev_end = time.time()
+            #t_evaluations += (t_ev_end - t_ev_start)
         f.close()
 
     #stop time measuring

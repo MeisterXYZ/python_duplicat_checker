@@ -1,3 +1,5 @@
 Output_*.txt
 *real_data*.txt
 *generatedTestData*.txt
+*_*DS\.txt
+*idea*
