@@ -58,7 +58,7 @@ else:
                     raise ValueError('Not all of the file-content was in "secquenceString"-format.')
                 else:
                     # calculate index by using the upper hash-function
-                    index = get_table_index(hash(line))
+                    index = get_table_index(get_string_hash(line))
                     inserted = False 
                     perturbation = -1
                     while not inserted:
@@ -79,14 +79,13 @@ else:
                                 #value isn't a duplicate -> So it's another link -> set index to next position
                                 colCount +=1 
                                 if perturbation == -1:
-                                    perturbation = hash(line)
+                                    perturbation = get_string_hash(line)
                                 else:
                                     perturbation = perturbation >> 5
                                 index = ((5*index)+1+perturbation) % hashTableSize
                     
                     #resize table if 2/3-Limit is passed
                     if processed > (2./3)*hashTableSize:
-                        #t_r_start = time.time()
                         #calculate new table size
                         while not 4 * processed < hashTableSize: 
                             hashTableSize = hashTableSize * 2
@@ -97,11 +96,11 @@ else:
                             if i != None:
                                 inserted = False
                                 perturbation = -1
-                                index = get_table_index(hash(i))
+                                index = get_table_index(get_string_hash(i))
                                 while not inserted:
                                     if newTable[index] != None:
                                         if perturbation == -1:
-                                            perturbation = hash(i)
+                                            perturbation = get_string_hash(i)
                                         else:
                                             perturbation = perturbation >> 5
                                         index = ((5*index)+1+perturbation) % hashTableSize
@@ -119,7 +118,7 @@ else:
     #print "dups found: ", dupCount
     str = str(end-start)
     print str.replace('.',',')
-
+    
     #print result to file
     '''
     with open ('Output_1_pyCollHand.txt' , 'w') as f:

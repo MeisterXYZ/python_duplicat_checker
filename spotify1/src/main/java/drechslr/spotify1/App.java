@@ -92,8 +92,8 @@ public class App
         List<String> processedArtists = new ArrayList<String>();
         
         //variable parts
-        int minimumSizeOutputList = 50000;
-        String startArtistUri = "1BOTcSZvfl1F4kui1f95dk";//"7dGJo4pcD2V6oG8kP0tJRR"; //"3g2kUQ6tHLLbmkV7T4GPtL";
+        int minimumSizeOutputList = 1000;
+        String startArtistUri = "2uFUBdaVGtyMqckSeCl0Qj";//"7dGJo4pcD2V6oG8kP0tJRR";//"4dpARuHxo51G3z768sgnrY";//"5e1BZulIiYWPRm8yogwUYH";//"7e52Ytzjj1q71DUj2cSlch";//"0HlxL5hisLf59ETEPM3cUA";//"2QOIawHpSlOwXDvSqQ9YJR";//"0k17h0D3J5VfsdmQ1iZtE9";//"5YL5sKtxi1J4bApusQ2uwI"; //"1BOTcSZvfl1F4kui1f95dk";//"7dGJo4pcD2V6oG8kP0tJRR"; //"3g2kUQ6tHLLbmkV7T4GPtL";
         
         //the loop
         searchUnprocessedArtists.add(startArtistUri);
