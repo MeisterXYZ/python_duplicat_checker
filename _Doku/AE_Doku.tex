@@ -1,0 +1,153 @@
+\documentclass[
+10pt, % Main document font size
+a4paper, % Paper type, use 'letterpaper' for US Letter paper
+oneside, % One page layout (no page indentation)
+%twoside, % Two page layout (page indentation for binding and different headers)
+headinclude,footinclude, % Extra spacing for the header and footer
+BCOR5mm, % Binding correction
+]{scrartcl}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+	language=C,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\usepackage{german}
+
+%usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+\usepackage[german,onelanguage,linesnumbered, ruled]{algorithm2e}
+\SetAlFnt{\small}
+\SetAlCapFnt{\large}
+\SetAlCapNameFnt{\large}
+%\usepackage{algpseudocode}
+
+
+\input{structure.tex} % Include the structure.tex file which specified the document structure and layout
+
+\hyphenation{Fortran hy-phen-ation} % Specify custom hyphenation points in words with dashes where you would like hyphenation to occur, or alternatively, don't put any dashes in a word to stop hyphenation altogether
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHOR(S)
+%----------------------------------------------------------------------------------------
+
+\title{\normalfont\spacedallcaps{Projektaufgabe AE}} % The article title
+
+\subtitle{Spotify playlist cleaner} % Uncomment to display a subtitle
+
+\author{\spacedlowsmallcaps{Raphael Drechsler}} % The article author(s) - author affiliations need to be specified in the AUTHOR AFFILIATIONS block
+
+\date{} % An optional date to appear under the author(s)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	HEADERS
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\sectionmark}[1]{\markright{\spacedlowsmallcaps{#1}}} % The header for all pages (oneside) or for even pages (twoside)
+%\renewcommand{\subsectionmark}[1]{\markright{\thesubsection~#1}} % Uncomment when using the twoside option - this modifies the header on odd pages
+\lehead{\mbox{\llap{\small\thepage\kern1em\color{halfgray} \vline}\color{halfgray}\hspace{0.5em}\rightmark\hfil}} % The header style
+
+\pagestyle{scrheadings} % Enable the headers specified in this block
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS & LISTS OF FIGURES AND TABLES
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title/author/date block
+
+\setcounter{tocdepth}{2} % Set the depth of the table of contents to show sections and subsections only
+
+\tableofcontents % Print the table of contents
+
+%\listoffigures % Print the list of figures
+
+%\listoftables % Print the list of tables
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\newpage % Start the article content on the second page, remove this if you have a longer abstract that goes onto the second page
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+\section{Mathematische Beschreibung der Problemstellung}
+
+DRT.\\
+Hash.\\
+Abbildung von groß auf klein.\\
+Nicht Injektiv\\
+Kollision\\
+Strategie zur Vermeidung.\\
+
+\section{Anwendungsszenario}
+DRT.\\
+Spotify.\\
+Große Playlists vereinen\\
+Soundso kann man klicken\\
+DAnn Duplikate wegmachen\\
+Einfügen und fertig\\
+
+\section{Beschreibung der Funktionsweisen der Algorithmen}
+DRT.\\
+Im Folgenden sollen die beschreiben werden Darstellung dazu als...\\
+\subsection{Beschreibung Funktionsweise Haupt-Algorithmus}
+
+\subsection{Beschreibung Funktionsweise Vergleichs-Algorithmus 1}
+\subsection{Beschreibung Funktionsweise Vergleichs-Algorithmus 2}
+\section{Messungen - Vorgehen}
+\section{Messungen - Daten}
+\subsection{Test-Daten}
+\subsection{Echt-Daten}
+\section{Profiling und Optimierung}
+\subsection{Profiling und Optimierung Haupt-Algorithmus}
+\subsection{Profiling und Optimierung Vergleichs-Algorithmus 1}
+\section{Vergleich Echt vs. Test-Daten}
+\subsection{Haupt-Algorithmus}
+\subsection{Vergleichs-Algorithmus 1}
+\section{Vergleich mit Theoretischer Laufzeit}
+\subsection{Haupt-Algorithmus}
+\subsection{Vergleichs-Algorithmus 1}
+\section{Vergleich der Algorithmen}
+\subsection{Grafischer Vergleich}
+\subsection{Statistischer Hypothesen-Test}
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\refname}{\spacedlowsmallcaps{References}} % For modifying the bibliography heading
+
+\bibliographystyle{unsrt}
+
+\bibliography{sample.bib} % The file containing the bibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

@@ -1,0 +1,22 @@
+\contentsline {section}{\numberline {1}Mathematische Beschreibung der Problemstellung}{2}{section.1}
+\contentsline {section}{\numberline {2}Anwendungsszenario}{2}{section.2}
+\contentsline {section}{\numberline {3}Beschreibung der Funktionsweisen der Algorithmen}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Beschreibung Funktionsweise Haupt-Algorithmus}{2}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Beschreibung Funktionsweise Vergleichs-Algorithmus 1}{2}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Beschreibung Funktionsweise Vergleichs-Algorithmus 2}{2}{subsection.3.3}
+\contentsline {section}{\numberline {4}Messungen - Vorgehen}{2}{section.4}
+\contentsline {section}{\numberline {5}Messungen - Daten}{2}{section.5}
+\contentsline {subsection}{\numberline {5.1}Test-Daten}{2}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Echt-Daten}{2}{subsection.5.2}
+\contentsline {section}{\numberline {6}Profiling und Optimierung}{2}{section.6}
+\contentsline {subsection}{\numberline {6.1}Profiling und Optimierung Haupt-Algorithmus}{2}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Profiling und Optimierung Vergleichs-Algorithmus 1}{2}{subsection.6.2}
+\contentsline {section}{\numberline {7}Vergleich Echt vs. Test-Daten}{2}{section.7}
+\contentsline {subsection}{\numberline {7.1}Haupt-Algorithmus}{2}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Vergleichs-Algorithmus 1}{2}{subsection.7.2}
+\contentsline {section}{\numberline {8}Vergleich mit Theoretischer Laufzeit}{2}{section.8}
+\contentsline {subsection}{\numberline {8.1}Haupt-Algorithmus}{2}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Vergleichs-Algorithmus 1}{2}{subsection.8.2}
+\contentsline {section}{\numberline {9}Vergleich der Algorithmen}{2}{section.9}
+\contentsline {subsection}{\numberline {9.1}Grafischer Vergleich}{2}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Statistischer Hypothesen-Test}{2}{subsection.9.2}
