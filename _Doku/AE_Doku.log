@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.19)  31 JAN 2018 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.7)  1 FEB 2018 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -173,12 +173,6 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count96
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/german/german.sty
 v2.5e 1998-07-08
 Package: german 1998/07/08 v2.5e Support for writing german texts (br)
@@ -1124,21 +1118,21 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 74.
 ) (./AE_Doku.aux)
 \openout1 = `AE_Doku.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Try loading font information for T1+pplj on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Try loading font information for T1+pplj on input line 65.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
@@ -1176,7 +1170,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box43
-Package hyperref Info: Link coloring ON on input line 63.
+Package hyperref Info: Link coloring ON on input line 65.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1187,16 +1181,16 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 \c@section@level=\count149
 LaTeX Info: Redefining \Ref on input line 515.
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
 
 (./AE_Doku.out) (./AE_Doku.out)
 \@outlinefile=\write3
 \openout3 = `AE_Doku.out'.
 
-LaTeX Info: Redefining \Ref on input line 63.
-LaTeX Info: Redefining \microtypecontext on input line 63.
+LaTeX Info: Redefining \Ref on input line 65.
+LaTeX Info: Redefining \microtypecontext on input line 65.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1211,7 +1205,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+iwona on input line 80.
+LaTeX Font Info:    Try loading font information for T1+iwona on input line 82.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/iwona/t1iwona.fd
@@ -1222,18 +1216,18 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <10> not available
-(Font)              Font shape `T1/iwona/b/n' tried instead on input line 80.
+(Font)              Font shape `T1/iwona/b/n' tried instead on input line 82.
 LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/iwona/b/n' tried instead on input line 80.
+(Font)              Font shape `T1/iwona/b/n' tried instead on input line 82.
 LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <12> not available
-(Font)              Font shape `T1/iwona/b/n' tried instead on input line 80.
-LaTeX Font Info:    Try loading font information for OT1+pplj on input line 80.
+(Font)              Font shape `T1/iwona/b/n' tried instead on input line 82.
+LaTeX Font Info:    Try loading font information for OT1+pplj on input line 82.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1pplj.fd
 File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
 )
-LaTeX Font Info:    Try loading font information for U+zeur on input line 80.
+LaTeX Font Info:    Try loading font information for U+zeur on input line 82.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
@@ -1241,7 +1235,7 @@ File: uzeur.fd 2005/01/11 v4.0 (WaS)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeus on input line 80.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 82.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/eulervm/uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
@@ -1249,12 +1243,12 @@ File: uzeus.fd 2005/01/11 v4.0 (WaS)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-eus.cfg
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 80.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 82.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 80.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 82.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -1271,7 +1265,7 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Package tocbasic Info: character protrusion at toc deactivated on input line 83
+Package tocbasic Info: character protrusion at toc deactivated on input line 85
 .
 
 (./AE_Doku.toc
@@ -1292,55 +1286,146 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (0.31837pt too wide) in paragraph at lines 99--99
-|[]\T1/iwona/m/sc/14.4/80ls mathematische be-schrei-bung der pro-blem-stel- 
+Underfull \hbox (badness 10000) in paragraph at lines 103--106
+
+ []
+
+<Figures/Diag1.png, id=154, 737.75626pt x 582.175pt>
+File: Figures/Diag1.png Graphic file (type png)
+ <use Figures/Diag1.png>
+Package pdftex.def Info: Figures/Diag1.png used on input line 137.
+(pdftex.def)             Requested size: 185.0pt x 145.97867pt.
+LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <9> not available
+(Font)              Font shape `T1/iwona/b/n' tried instead on input line 138.
+
+[2 <./Figures/Diag1.png>] <Figures/Diag2.png, id=177, 1124.2pt x 521.95pt>
+File: Figures/Diag2.png Graphic file (type png)
+
+<use Figures/Diag2.png>
+Package pdftex.def Info: Figures/Diag2.png used on input line 151.
+(pdftex.def)             Requested size: 277.5pt x 128.83856pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
+
+ []
+
+
+Overfull \hbox (12.15974pt too wide) in paragraph at lines 181--183
+\T1/pplj/m/n/10 Als An-wen-dungs-fall soll das dis-junk-te Ver-ei-ni-gen von Ti
+-teln meh-re-rer Spotify-Playlists
+ []
+
+[3 <./Figures/Diag2.png>]
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 186.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 7.65005pt on input line 186.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fvm' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--203
+
  []
 
 LaTeX Font Info:    Font shape `T1/iwona/bx/sc' in size <10> not available
-(Font)              Font shape `T1/iwona/b/sc' tried instead on input line 110.
+(Font)              Font shape `T1/iwona/b/sc' tried instead on input line 209.
 
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/b/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
-(./AE_Doku.bbl
 
-LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
-               before end of `thebibliography' environment on input line 3.
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
+ []
+
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <9> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 215.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <7> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 216.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <6.25002> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 216.
+
+Overfull \hbox (0.9097pt too wide) in paragraph at lines 221--223
+\T1/pplj/m/n/10 Stra-te-gie zur Kol-li-si-ons-auf-lö-sung ent-spricht der-je-ni
+-gen, die bei py-thon \T1/pplj/m/it/10 dict\T1/pplj/m/n/10 -Objekten
+ []
+
+[4] [5] (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
- [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
+
+ []
+
+(./pyCode1.py
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+) [6] (./AE_Doku.bbl [7]
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.50006pt on input line 11.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 389.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 389.
  (./AE_Doku.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 389.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 389.
 Package rerunfilecheck Info: File `AE_Doku.out' has not changed.
-(rerunfilecheck)             Checksum: 1B4579CC93C357C2D879FBAB84129AA1;1692.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
+(rerunfilecheck)             Checksum: 0CA8088AEB6BA19A5EADFCA8C5277D84;2130.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 389.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17710 strings out of 492995
- 308617 string characters out of 6132703
- 661185 words of memory out of 5000000
- 20954 multiletter control sequences out of 15000+600000
- 75826 words of font info for 76 fonts, out of 8000000 for 9000
+ 18380 strings out of 492995
+ 315464 string characters out of 6132704
+ 682432 words of memory out of 5000000
+ 21483 multiletter control sequences out of 15000+600000
+ 110854 words of font info for 148 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 66i,22n,87p,8818b,13329s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/iwona/ec-iw
-ona-sc.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{/us
+ 62i,24n,87p,8818b,14030s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
+}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{/us
 r/local/texlive/2017/texmf-dist/fonts/enc/dvips/iwona/ec-iwona.enc}</usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on AE_Doku.pdf (2 pages, 78301 bytes).
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/nowacki/iwona/iwonar.pfb></usr/local/texlive/2017/texmf-dist/fon
+ts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/p
+alatino/uplri8a.pfb>
+Output written on AE_Doku.pdf (8 pages, 238326 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 15025 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 361 PDF objects out of 1000 (max. 8388607)
+ 325 compressed objects within 4 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 22763 words of extra memory for PDF output out of 24883 (max. 10000000)
 

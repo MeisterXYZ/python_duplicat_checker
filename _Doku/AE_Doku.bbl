@@ -1,3 +1,14 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{Cormen:2009:IAT:1614191}
+Thomas~H. Cormen, Charles~E. Leiserson, Ronald~L. Rivest, and Clifford Stein.
+\newblock {\em Introduction to Algorithms, Third Edition}.
+\newblock The MIT Press, 3rd edition, 2009.
+
+\bibitem{TimeComplexityPy}
+Jonathan Hartley.
+\newblock Time complexity - python wiki.
+\newblock \url{https://wiki.python.org/moin/TimeComplexity}.
+\newblock Zuletzt bearbeitet: 05.06.2017, Zugriff: 01.02.2018.
 
 \end{thebibliography}

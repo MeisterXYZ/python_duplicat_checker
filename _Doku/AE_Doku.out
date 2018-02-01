@@ -1,22 +1,28 @@
-\BOOKMARK [1][-]{section.1}{1 Mathematische Beschreibung der Problemstellung}{}% 1
-\BOOKMARK [1][-]{section.2}{2 Anwendungsszenario}{}% 2
-\BOOKMARK [1][-]{section.3}{3 Beschreibung der Funktionsweisen der Algorithmen}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{3.1 Beschreibung Funktionsweise Haupt-Algorithmus}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{3.2 Beschreibung Funktionsweise Vergleichs-Algorithmus 1}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.3}{3.3 Beschreibung Funktionsweise Vergleichs-Algorithmus 2}{section.3}% 6
+\BOOKMARK [1][-]{section.1}{1 Problemstellung ''Remove Duplicates''}{}% 1
+\BOOKMARK [1][-]{section.2}{2 Anwendungsszenario Spotify Playlists}{}% 2
+\BOOKMARK [1][-]{section.3}{3 Funktionsweisen der Algorithmen}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{3.1 Funktionsweise Haupt-Algorithmus: dict-like}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{3.2 Funktionsweise Vergleichs-Algorithmus 1: Naiver Ansatz}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{3.3 Funktionsweise Vergleichs-Algorithmus 2: python dict}{section.3}% 6
 \BOOKMARK [1][-]{section.4}{4 Messungen - Vorgehen}{}% 7
-\BOOKMARK [1][-]{section.5}{5 Messungen - Daten}{}% 8
-\BOOKMARK [2][-]{subsection.5.1}{5.1 Test-Daten}{section.5}% 9
-\BOOKMARK [2][-]{subsection.5.2}{5.2 Echt-Daten}{section.5}% 10
-\BOOKMARK [1][-]{section.6}{6 Profiling und Optimierung}{}% 11
-\BOOKMARK [2][-]{subsection.6.1}{6.1 Profiling und Optimierung Haupt-Algorithmus}{section.6}% 12
-\BOOKMARK [2][-]{subsection.6.2}{6.2 Profiling und Optimierung Vergleichs-Algorithmus 1}{section.6}% 13
-\BOOKMARK [1][-]{section.7}{7 Vergleich Echt vs. Test-Daten}{}% 14
-\BOOKMARK [2][-]{subsection.7.1}{7.1 Haupt-Algorithmus}{section.7}% 15
-\BOOKMARK [2][-]{subsection.7.2}{7.2 Vergleichs-Algorithmus 1}{section.7}% 16
-\BOOKMARK [1][-]{section.8}{8 Vergleich mit Theoretischer Laufzeit}{}% 17
-\BOOKMARK [2][-]{subsection.8.1}{8.1 Haupt-Algorithmus}{section.8}% 18
-\BOOKMARK [2][-]{subsection.8.2}{8.2 Vergleichs-Algorithmus 1}{section.8}% 19
-\BOOKMARK [1][-]{section.9}{9 Vergleich der Algorithmen}{}% 20
-\BOOKMARK [2][-]{subsection.9.1}{9.1 Grafischer Vergleich}{section.9}% 21
-\BOOKMARK [2][-]{subsection.9.2}{9.2 Statistischer Hypothesen-Test}{section.9}% 22
+\BOOKMARK [2][-]{subsection.4.1}{4.1 Was wird gemessen?}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{4.2 Wie wird gemessen?}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{4.3 Was z\344hlt?}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{5 Messungen - Daten}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{5.1 Test-Daten}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{5.2 Echt-Daten}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.3}{5.3 Tats\344chliche Messungen}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{6 Profiling und Optimierung}{}% 15
+\BOOKMARK [2][-]{subsection.6.1}{6.1 Profiling und Optimierung Haupt-Algorithmus}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.2}{6.2 Profiling und Optimierung Vergleichs-Algorithmus 1}{section.6}% 17
+\BOOKMARK [1][-]{section.7}{7 Vergleich Echt vs. Test-Daten}{}% 18
+\BOOKMARK [2][-]{subsection.7.1}{7.1 Haupt-Algorithmus}{section.7}% 19
+\BOOKMARK [2][-]{subsection.7.2}{7.2 Vergleichs-Algorithmus 1}{section.7}% 20
+\BOOKMARK [2][-]{subsection.7.3}{7.3 Vergleichs-Algorithmus 2}{section.7}% 21
+\BOOKMARK [1][-]{section.8}{8 Vergleich mit Theoretischer Laufzeit}{}% 22
+\BOOKMARK [2][-]{subsection.8.1}{8.1 Haupt-Algorithmus}{section.8}% 23
+\BOOKMARK [2][-]{subsection.8.2}{8.2 Vergleichs-Algorithmus 1}{section.8}% 24
+\BOOKMARK [2][-]{subsection.8.3}{8.3 Vergleichs-Algorithmus 2}{section.8}% 25
+\BOOKMARK [1][-]{section.9}{9 Vergleich der Algorithmen}{}% 26
+\BOOKMARK [2][-]{subsection.9.1}{9.1 Grafischer Vergleich}{section.9}% 27
+\BOOKMARK [2][-]{subsection.9.2}{9.2 Statistischer Hypothesen-Test}{section.9}% 28
