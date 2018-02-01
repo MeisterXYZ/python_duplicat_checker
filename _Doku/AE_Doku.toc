@@ -4,25 +4,24 @@
 \contentsline {subsection}{\numberline {3.1}Funktionsweise Haupt-Algorithmus: dict-like}{4}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Funktionsweise Vergleichs-Algorithmus 1: Naiver Ansatz}{5}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Funktionsweise Vergleichs-Algorithmus 2: python dict}{6}{subsection.3.3}
-\contentsline {section}{\numberline {4}Messungen - Vorgehen}{6}{section.4}
-\contentsline {subsection}{\numberline {4.1}Was wird gemessen?}{6}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Wie wird gemessen?}{6}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Was z\IeC {\"a}hlt?}{6}{subsection.4.3}
-\contentsline {section}{\numberline {5}Messungen - Daten}{6}{section.5}
-\contentsline {subsection}{\numberline {5.1}Test-Daten}{6}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Echt-Daten}{6}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Tats\IeC {\"a}chliche Messungen}{6}{subsection.5.3}
-\contentsline {section}{\numberline {6}Profiling und Optimierung}{7}{section.6}
-\contentsline {subsection}{\numberline {6.1}Profiling und Optimierung Haupt-Algorithmus}{7}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Profiling und Optimierung Vergleichs-Algorithmus 1}{7}{subsection.6.2}
-\contentsline {section}{\numberline {7}Vergleich Echt vs. Test-Daten}{7}{section.7}
-\contentsline {subsection}{\numberline {7.1}Haupt-Algorithmus}{7}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Vergleichs-Algorithmus 1}{7}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Vergleichs-Algorithmus 2}{7}{subsection.7.3}
-\contentsline {section}{\numberline {8}Vergleich mit Theoretischer Laufzeit}{7}{section.8}
-\contentsline {subsection}{\numberline {8.1}Haupt-Algorithmus}{7}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Vergleichs-Algorithmus 1}{7}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Vergleichs-Algorithmus 2}{7}{subsection.8.3}
-\contentsline {section}{\numberline {9}Vergleich der Algorithmen}{7}{section.9}
-\contentsline {subsection}{\numberline {9.1}Grafischer Vergleich}{7}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Statistischer Hypothesen-Test}{7}{subsection.9.2}
+\contentsline {section}{\numberline {4}Messdaten}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Test-Daten-Generator}{6}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Echt-Daten}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Skalieren der Daten-Listen}{8}{subsection.4.3}
+\contentsline {section}{\numberline {5}Vorbereiten der Messungen}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}Profiling und Optimierung Haupt-Algorithmus}{9}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Profiling und Optimierung Vergleichs-Algorithmus 1}{10}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Profiling und Optimierung Vergleichs-Algorithmus 2}{11}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Wie wird gemessen?}{11}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Was passiert jetzt?}{11}{subsection.5.5}
+\contentsline {section}{\numberline {6}Vergleich Echt vs. Test-Daten}{12}{section.6}
+\contentsline {subsection}{\numberline {6.1}Haupt-Algorithmus}{12}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Vergleichs-Algorithmus 1}{12}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Vergleichs-Algorithmus 2}{12}{subsection.6.3}
+\contentsline {section}{\numberline {7}Vergleich mit Theoretischer Laufzeit}{12}{section.7}
+\contentsline {subsection}{\numberline {7.1}Haupt-Algorithmus}{12}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Vergleichs-Algorithmus 1}{12}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Vergleichs-Algorithmus 2}{12}{subsection.7.3}
+\contentsline {section}{\numberline {8}Vergleich der Algorithmen}{12}{section.8}
+\contentsline {subsection}{\numberline {8.1}Grafischer Vergleich}{12}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Statistischer Hypothesen-Test}{12}{subsection.8.2}

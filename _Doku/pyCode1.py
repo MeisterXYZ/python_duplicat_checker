@@ -4,3 +4,4 @@ for uri in sequenzFile:
         uriDict[uri] = 1
     else:
         #ignore duplicate
+        pass

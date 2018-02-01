@@ -294,16 +294,212 @@ Anschließend erfolgt die Ausgabe der Duplikat-freien Liste per Erzeugen einer O
 Die Funktionsweise des zweiten Vergleichs-Algorithmus ist diejenige, deren Verhalten in der Umsetzung des Haupt-Algorithmus angestrebt wird.\\
 Folglich zeichnet sich der Quellcode der Implementierung durch die Nutzung von python-Standard-Operatoren aus. Der wesentliche Teil der Implementierung umfasst die folgenden Zeilen Code:\\
 \lstinputlisting[language=python]{pyCode1.py}
-Analog zu den anderen zwei Implementierung erfolgt im Anschluss eine Ausgabe aller Elemente des dicts per Output-File.
+Analog zu den anderen zwei Implementierung erfolgt im Anschluss eine Ausgabe aller Elemente des dicts per Output-File.\\
 
-\section{Messungen - Vorgehen}
-\subsection{Was wird gemessen?}
-DRT\\
-Gemessen werden nur die Zeiten bis Array fertig ist. Sequenz-File öffnen und Outpuf-File schreiben ist nich.
 
-Gemessen werden pro Algo verscheidene Instanzen:
-- Größe variiert
-- Ausgangs-File variiert
+Alle drei initialen Implementierungen finden sich im Abgabeordner unter \textit{/Code/02\_ImplementierungOhneVerbesserung}.
+Zum Aufruf der Algorithmen über die Kommandozeile muss die zu untersuchende \textit{.txt}-Datei als Parameter angegeben werden. Beispielhaft sei hier ein Aufruf der ersten Implementierung gezeigt.
+
+\lstinputlisting[language=sh]{call1.sh}
+
+
+\section{Messdaten}
+Zur Beschaffung von möglichst großen und verschiedenen Playlists als Messdaten wurde zunächst ein Test-Daten-Generator implementiert. Dieser wird in 4.1 näher beschrieben.\\
+Im Folgenden wurde ein kurzes Programm implementiert, welches die Spotify Web-API nach Titeln anfragt und somit echte Datensätze erhält. Dieser Echt-Daten-Abgreifer wird in 4.2 näher beschrieben.\\
+Zudem wurde für das Durchführen von Messreihen mit wachsender Playlist-Größe ein Vorgehen etabliert, um die benötigten .txt-Files zu erzeugen. Dieses wird in 4.3 erläutert.
+
+\subsection{Test-Daten-Generator}
+
+Der Aufruf des Generators erfolgt mit zwei optionalen Parametern und einem obligatorischem Parameter.
+\begin{lstlisting}
+testDataGenerator.py <n> [dupFactor] [fileSuffix]
+\end{lstlisting}
+Der Parameter \textit{n} entspricht der Anzahl der Elemente, welche die zu generierende Liste enthalten soll. Der \textit{dupFactor} entspricht der Wahrscheinlichkeit mit der ein Element in der Liste ein Duplikat ist. Der \textit{fileSuffix} kann bei mehreren ausgegebenen Dateien mit gleicher Parametrisierung für eine unterschiedliche Benennung genutzt werden.\\ 
+Ein Beispiel für einen Aufruf könnte wie folgt aussehen.\\
+\lstinputlisting[language=sh]{call2.sh}
+
+Im Wesentlichen erzeugt der Test-Daten-Generator eine \textit{.txt}-Datei im sequence-File-Format. Die dynamischen Teile der URIs, (welche einen base62-Code \cite{SptfyTrackID} der Länge 22 darstellen) werden dabei zufällig erzeugt und ergeben im Regelfall keine tatsächlich existierende URI.\\
+Die Funktionsweise des Generators ist dabei wie folgt zu beschreiben. \\
+
+\textbf{Algorithmus Test-Daten-Generator}\\
+\begin{algorithm}[H]
+	\KwData{$n, [dupFactor],[fileSuffix]$}
+	\KwResult{$.txt-File$}
+	\uIf{$dupFactor$ nicht gegeben}{
+		$dupFactor \leftarrow$ zufälliger Faktor aus $\{$\(0.0,0.1,...0.9\)$\}$;\\
+	}
+	$linkList \leftarrow []$;\\
+	\For{$i$ in $\{0,...,n-1\}$}{
+		\uIf{$i>0$}{
+			\uIf{Zufallsentscheidung mit Wahscheinlichkeit $dupFactor = positiv$}{
+				$linkList.append(linkList[i-1])$;\\
+			}
+			\Else{
+				$linkList.append($neue zufällige URI$)$;\\
+			}
+		}
+		\Else{
+			$linkList.append($neue zufällige URI$)$;\\
+		}
+	}
+	erzeuge neues $.txt-File$ ggf mit Suffix $fileSuffix$;\\
+	Schreibe in 1. Zeile von $.txt-File$ ''$secquenceString$'';\\
+	Schreibe Elemente aus $linkList$ in Zufalls-Reihenfolge in $.txt-File$;\\
+\end{algorithm}\
+
+Die resultierende Datei \textit{(Beispielsweise ''generatedTestData100000\_0.4dupFac\_Run1.txt'')} ist dann bereit zur Verarbeitung durch einen implementierten Algorithmus oder lässt sich zum Erstellen mehrerer Playlist für eine Messreihe einsetzen. \textit{(Siehe 4.3)}\\
+
+Die Implementierung des Algorithmus findet sich im Abgabeordner unter \textit{Code/01\_Daten\_Generieren/01\_TestDaten/testDataGenerator.py}.
+
+\subsection{Echt-Daten}
+Für das Beschaffen von großen Playlists mit echten Track-URIs wurde eine Java-Anwendung umgesetzt, welche mithilfe eines Wrappers \cite{API} die Spotify API abfragt.\\
+Um eine beliebig große Menge an URIs abzufragen, wurden das unten dargestellte Vorgehen für das Abfragen der API implementiert. Dabei müssen eine Mindest-Anzahl an URIs, die erhalten werden sollen und die URI eines Interpreten als Start-Interpreten angegeben werden.\\
+
+Der entsprechende Java-Projektordner findet sich im Abgabeordner unter \textit{Code/01\_Daten\_Generieren/02\_EchtDaten/realDataGetter}.
+
+\textbf{Algorithmus Echt-Daten-Abgreifer}\\
+\begin{algorithm}[H]
+	\SetKwRepeat{Do}{tue}{solange}
+	\KwData{$minimalNoOfUris, startArtist$}
+	\KwResult{$outputFile.txt$}
+	Autorisierungsprozess zwischen Anwendung und Spotify API;\\
+	$outputTracklist \leftarrow []$;\\
+	$searchProcessedArtists \leftarrow []$;\\
+	$searchUnprocessedArtists \leftarrow []$;\\
+	$processedArtists \leftarrow []$;\\	
+	$searchUnprocessedArtists.add(startArtistUri)$;\\
+	\Do{$|outputTracklist|<=minimalNoOfUris$ UND $searchUnprocessedArtists$ ist nicht leer}{
+		\For{$artist$ in $api.getRelatedArtists(searchUnprocessedArtists.get(0))$}{
+			\uIf{$artist$ nicht in $processedArtists$}{
+				$searchUnprocessedArtists.add(artist);$
+				\For{$album$ in $api.getAlbumsForArtist(artist)$}{
+					\For{$track$ in $album$}{
+						$outputTracklist.add(track)$;\\
+					}
+				}
+			$processedArtists.add(artist)$;\\
+			}
+		}
+	$searchProcessedArtists.add(searchUnprocessedArtists.get(0))$;\\
+	$searchUnprocessedArtists.remove(0)$;\\
+	}
+	Erzeuge $outputFile.txt$;\\
+	Schreibe in Zeile 1 von $outputFile.txt$ ''secquenceString'';\\
+	\For{$URI$ in $outputTracklist$}{
+		Schriebe $URI$ in $outputFile.txt$;\\
+	}	
+\end{algorithm}\
+
+Analog zu 4.1 kann die generierte Datei im Anschluss verarbeitet werden.
+
+\subsection{Skalieren der Daten-Listen}
+Um später ganze Messreihen auszuführen, bei denen die Anzahl der Elemente, die in den Playlists enthalten sind, im Verlaufe der Messreihe zunimmt, wurde ein python-Skript erstellt, welches ein Sequenz-File einliest und nach eine Neue Datei erstellt, welche nur die Anzahl an Zeilen (zuzüglich der Zeile ''secquenceString'') beinhaltet, welche als zweiter Parameter übergeben wird.
+
+Der Aufruf erfolgt beispielsweise wie folgt:
+\lstinputlisting[language=sh]{call3.sh}
+
+Um viele Dateien für eine Messreihe zu generieren, wird ein kurzes shell-Skript je Messreihe angepasst und anschließend eingesetzt.\\
+
+Das python- und das shell-Skript finden sich im Abgabeordner unter\\ \textit{Code/01\_Daten\_Generieren/03\_DatenSkalieren}.
+
+\section{Vorbereiten der Messungen}
+Bevor der die Algorithmen-Laufzeiten untereinander und mit den jeweiligen theoretischen Laufzeiten verglichen werden, soll zunächst das Profiling und das Optimieren der einzelnen Implementierungen erfolgen. (Kapitel 5.1 - 5.3)\\
+Die Vorbereitung der Messungen wird mit Kapitel 5.4 abgeschlossen, in dem beleuchtet wird, welche Messungen auf welche Weise erfolgen.
+
+\subsection{Profiling und Optimierung Haupt-Algorithmus}
+Generell soll für die Laufzeit-Messungen nur das Abarbeiten der Track-URIs, also das schreiben dieser in die hash-table bzw. das dict im Fokus stehen. Daher werden für alles Weitere die Funktionalitäten für das Schreiben des Ergebnis-Files auskommentiert.\\
+Für den Hauptalgorithmus liegt die entsprechende \textit{.py}-Datei im Abgabeordner unter \textit{Code/03\_Messen\_und\_Verbessern/01\_Alg\_1/1\_dictLike\_improvement0.py}.\\
+
+Für das Profiling wird ein mittels \textit{testDataGenerator.py} erstelltes \textit{.txt}-File mit Größe \(n=100.000\) und der Duplikat-Wahrscheinlichkeit von \(dupFac = 2\%\) verwendet.\\
+Das Profiling erfolgt über die Nutzung des python-Profilers \textit{cProfile} \cite{CPROF}.\\
+
+Die erste Visualisierung des Profils mittels \textit{Snakeviz} zeigt:\\
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=0.75\columnwidth]{pro1} 
+	\caption[Darstellung initiales Profiling Alg. 1]{Darstellung initiales Profiling von Algorithmus 1}
+\end{figure}\
+
+Die Funktion \textit{get\_string\_hash} macht einen Großteil der Arbeitszeit aus. Diese Funktion ist der python-Standard-Funktion \textit{hash()} nachempfunden. Das Implementieren dieser Funktion sollte dem tieferen Verständnis dienen.\\
+Die wesentliche Verbesserung besteht also im ersetzten der \textit{get\_string\_hash}-Funktion durch den python-Standard.\\
+Der angepasste Algorithmus ist im Abgabeordner unter\\ \textit{Code/03\_Messen\_und\_Verbessern/01\_Alg\_1/1\_dictLike\_improvement1.py} enthalten.\\
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=0.75\columnwidth]{pro2} 
+	\caption[Darstellung Profiling Alg. 1 nach 1. Verbesserung]{Darstellung Profiling von Algorithmus 1 nach 1. Verbesserung}
+\end{figure}\
+
+Würde man diesem Prinzip der Optimierung folgen, also alles, wofür es python-Standard-Funktionalitäten gibt mit python-Standard-Funktionalitäten lösen, so würde der auf diesem Wege final optimierte Algorithums zu dem zweiten Vergleichs-Algorithmus (Kapitel 3.3.) identisch sein.\\
+Daher soll im nächsten Schritt einer potentiellen Verbesserung das Tailoring angesetzt werden.\\
+
+Betrachtet man die URIs, wird klar, dass die hash-Funktion nur auf den 22-stelligen Base62-Code angewendet werden muss, da der restliche Teil für alle URIs identisch ist.\\
+\begin{lstlisting}
+https://open.spotify.com/track/757530vPBymdi31CtXstxP
+https://open.spotify.com/track/1Qi256uJuMihknGuuFcQoC
+\end{lstlisting}
+
+Der entsprechend angepasste Algorithmus ist im Abgabeordner unter\\ \textit{Code/03\_Messen\_und\_Verbessern/01\_Alg\_1/1\_dictLike\_improvement2.py} enthalten. Die Ausgabe-Funktion muss für eine Anwendung um den statischen Teil der URIs erweitert werden. Dies wurde in der Datei, obgleich die Ausgabefunktion für die Messungen auskommentiert bleibt, getan.\\
+Die Visualisierung des Profilings zeigt:\\
+\textit{Code/03\_Messen\_und\_Verbessern/01\_Alg\_1/1\_dictLike\_improvement1.py} enthalten.\\
+
+Da die Profile bezüglich ihrer gesamt-benötigten Laufzeit zu nahe beieinander lagen, wurde das Profiling der vorherigen Version \textit{1\_dictLike\_improvement1.py} und das Profiling der Verbesserten Variante mit einem \textit{.txt}-File der Größe \(n=1.000.000\) wiederholt.
+
+Die Verbesserung ist marginal. Bei mehrfachem Messen zeigte sich, dass durch Schwankungen anhand Gesamt-Laufzeit nicht erkannt werden konnte, welche Implementierung schneller ist. Durch das Profiling jedoch stellte sich heraus, dass die benötigte Zeit für das Anwenden der Hash-Funktion bei in jedem Profil für den zweiten Algorithmus geringer war.
+
+
+\begin{table}[h!]
+	\centering 
+	\begin{tabular}{l|c|c|c|c|}
+		\hline 
+		Durchlauf & Vor Tailoring gesamt & Nach T. gesamt & Vor T. hash() & Nach T. hash()\\ 
+		\hline
+		1	& \(2,65s\)	& \(2,54s\)	& \(0,185s\) & \(0,143s\) \\
+		\hline
+		2	& \(2,61s\)	& \(2,62s\)	& \(0,183s\) & \(0,146s\) \\
+		\hline
+		3	& \(2,74s\)	& \(2,43s\)	& \(0,188s\) & \(0,138s\) \\
+		\hline
+	\end{tabular}\\
+	\caption[Ergebnisse Tailoring]{Ergebnisse des Tailorings: Benötigte Zeit gesamt und für hash-Funktion}
+\end{table}\
+
+Abschließend seien hier die Zeitbedarfe für je einen Durchlauf einer Verbesserungs-Stufe des ersten Algorithmus für die oben verwendete Playlist mit \(n=100.000\) Elementen dargestellt:
+
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=0.75\columnwidth]{pro1fin} 
+	\caption[Zusammenfassung Optimierung Alg. 1]{Zusammenfassung der Optimierung von Algorithmus 1}
+\end{figure}\
+
+\subsection{Profiling und Optimierung Vergleichs-Algorithmus 1}
+Analog zu der in Kapitel 5.1 gewonnenen Erkenntnis, soll die Verbesserung des Algorithmus in zwei Schritten ablaufen:
+\begin{enumerate}[noitemsep]
+	\item Ersetzen von implementierten Funktionalitäten, die mit python-Standards gelöst werden können (Iterieren durch Array ablösen durch Verwendung des \textit{in}-Operators)
+	\item Anpassen des Algorithus analog zum in 5.1 durchgeführten Tailoring
+\end{enumerate}\
+
+Die entsprechenden Implementierungen sind im Abgabeordner unter\\ \textit{Code/03\_Messen\_und\_Verbessern/02\_Alg\_2/} enthalten.\\
+
+Die zusammengefasste Verbesserung gestaltet sich für ein Beispiel der Laufzeit mit \(n=10.000\) für Algorithmus 2 wie folgt:\\
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=0.75\columnwidth]{pro2fin} 
+	\caption[Zusammenfassung Optimierung Alg. 2]{Zusammenfassung der Optimierung von Algorithmus 2}
+\end{figure}\
+
+Die Verbesserung ist ähnlich zu der in Kapitel 5.1 erzielten, wobei jedoch das Tailoring für Algorithmus 2 eine größere Wirkung zeigt.
+
+\subsection{Profiling und Optimierung Vergleichs-Algorithmus 2}
+Da in dieser Umsetzung bereits die python-Standardfunktionen genutzt werden, soll hier nur das Tailoring betrachtet werden. Die entsprechenden Implementierungen sind im Abgabeordner unter \textit{Code/03\_Messen\_und\_Verbessern/03\_Alg\_3/} enthalten.\\
+
+Die Verbesserung wird erst ersichtlich, wenn man die Anzahl der URIs in der Liste deutlich erhöht. Ab \(n=10.000.000\) zeigt sich der Effekt:\\
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=0.75\columnwidth]{pro3fin} 
+	\caption[Zusammenfassung Optimierung Alg. 3]{Zusammenfassung der Optimierung von Algorithmus 3}
+\end{figure}\
+
+
 
 \subsection{Wie wird gemessen?}
 Gemessen wird mit Python zeug simple Algebra
@@ -312,38 +508,21 @@ ausgabe ins terminal
 Nutzung mehrerer Ausgabe-Files 
 Nutzung sh script
 
-Achtung: Profiling anders -> Beschreiben in ...
+Gemessen werden pro Algo verscheidene Instanzen:
+- Größe variiert
+- Ausgangs-File variiert
 
-\subsection{Was zählt?}
 ?wird das erst später beschrieben?
 -> Boxplot
 -> Aus
  
-\section{Messungen - Daten}
-\subsection{Test-Daten}
-\subsection{Echt-Daten}
-\subsection{Tatsächliche Messungen}
-Reihenfolge:
-- Profiling \& Tailoring
-- VGL Test Real
-- Vgl mit theoretischer Laufzeit
+ \subsection{Was passiert jetzt?}
 
-\section{Profiling und Optimierung}
+Vglf Test real
+theo lauf
+grafischer vgl
+statistischer hypotest
 
-Nur in 2 und 1 möglich.
-Profiling mit VizSnake
-\subsection{Profiling und Optimierung Haupt-Algorithmus}
-
-Nutzung von hash-Std. Funktion
-3 x Verbesserung möglich
-
-Dann noch Tailoring: Nur URI nutzen.
--> Verbesserung?
-
-\subsection{Profiling und Optimierung Vergleichs-Algorithmus 1}
-Analog zu Erkenntnis davor.
-Dann noch Tailoring: Nur URI nutzen.
--> Verbesserung?
 
 \section{Vergleich Echt vs. Test-Daten}
 \subsection{Haupt-Algorithmus}
@@ -378,7 +557,7 @@ Was eig gegen wen?
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\renewcommand{\refname}{\spacedlowsmallcaps{Literatur}} % For modifying the bibliography heading
+\renewcommand{\refname}{\spacedlowsmallcaps{Literatur/Quellen}} % For modifying the bibliography heading
 
 \bibliographystyle{unsrt}
 

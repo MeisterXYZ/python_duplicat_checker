@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.7)  1 FEB 2018 10:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.19)  1 FEB 2018 21:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1290,7 +1290,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--106
 
  []
 
-<Figures/Diag1.png, id=154, 737.75626pt x 582.175pt>
+<Figures/Diag1.png, id=149, 737.75626pt x 582.175pt>
 File: Figures/Diag1.png Graphic file (type png)
  <use Figures/Diag1.png>
 Package pdftex.def Info: Figures/Diag1.png used on input line 137.
@@ -1298,7 +1298,7 @@ Package pdftex.def Info: Figures/Diag1.png used on input line 137.
 LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <9> not available
 (Font)              Font shape `T1/iwona/b/n' tried instead on input line 138.
 
-[2 <./Figures/Diag1.png>] <Figures/Diag2.png, id=177, 1124.2pt x 521.95pt>
+[2 <./Figures/Diag1.png>] <Figures/Diag2.png, id=172, 1124.2pt x 521.95pt>
 File: Figures/Diag2.png Graphic file (type png)
 
 <use Figures/Diag2.png>
@@ -1378,32 +1378,167 @@ Package xcolor Warning: Incompatible color definition on input line 6.
 
 Package xcolor Warning: Incompatible color definition on input line 6.
 
-) [6] (./AE_Doku.bbl [7]
+)
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+
+ []
+
+
+Overfull \hbox (1.42984pt too wide) in paragraph at lines 300--302
+\T1/pplj/m/it/10 de/02_ImplementierungOhneVerbesserung\T1/pplj/m/n/10 . Zum Auf
+-ruf der Al-go-rith-men über die Kom-
+ []
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(./call1.sh)
+Underfull \hbox (badness 10000) in paragraph at lines 317--319
+
+ []
+
+[6] (./call2.sh)
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
+
+ []
+
+
+Overfull \hbox (12.85991pt too wide) in paragraph at lines 350--351
+[]\T1/pplj/m/n/10 Die re-sul-tie-ren-de Da-tei \T1/pplj/m/it/10 (Bei-spiels-wei
+-se ''ge-ne-ra-ted-Test-Da-ta100000_0.4dupFac_Run1.txt'')
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--357
+
+ []
+
+[7] (./call3.sh)
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 410--412
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 413--415
+
+ []
+
+<Figures/pro1.png, id=334, 1125.20375pt x 368.37625pt>
+File: Figures/pro1.png Graphic file (type png)
+ <use Figures/pro1.png>
+Package pdftex.def Info: Figures/pro1.png used on input line 419.
+(pdftex.def)             Requested size: 277.5pt x 90.84598pt.
+
+<Figures/pro2.png, id=335, 1120.185pt x 401.5pt>
+File: Figures/pro2.png Graphic file (type png)
+ <use Figures/pro2.png>
+Package pdftex.def Info: Figures/pro2.png used on input line 428.
+(pdftex.def)             Requested size: 277.5pt x 99.46191pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
+
+ []
+
+[9 <./Figures/pro1.png> <./Figures/pro2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 441--444
+
+ []
+
+
+Overfull \hbox (18.44978pt too wide) in paragraph at lines 452--462
+ [][] 
+ []
+
+
+Overfull \hbox (5.43976pt too wide) in paragraph at lines 466--467
+[]\T1/pplj/m/n/10 Abschlieÿend sei-en hier die Zeit-be-dar-fe für je einen Durc
+h-lauf ei-ner Verbesserungs-
+ []
+
+<Figures/pro1fin.png, id=345, 975.645pt x 598.235pt>
+File: Figures/pro1fin.png Graphic file (type png)
+ <use Figures/pro1fin.png>
+Package pdftex.def Info: Figures/pro1fin.png used on input line 470.
+(pdftex.def)             Requested size: 277.5pt x 170.15187pt.
+
+[10 <./Figures/pro1fin.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
+
+ []
+
+<Figures/pro2fin.png, id=356, 978.65625pt x 601.24625pt>
+File: Figures/pro2fin.png Graphic file (type png)
+
+<use Figures/pro2fin.png>
+Package pdftex.def Info: Figures/pro2fin.png used on input line 486.
+(pdftex.def)             Requested size: 277.5pt x 170.4854pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
+
+ []
+
+<Figures/pro3fin.png, id=357, 971.63pt x 592.2125pt>
+File: Figures/pro3fin.png Graphic file (type png)
+ <use Figures/pro3fin.png>
+Package pdftex.def Info: Figures/pro3fin.png used on input line 499.
+(pdftex.def)             Requested size: 277.5pt x 169.13474pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./Figures/pro2fin.png>] (./AE_Doku.bbl [12 <./Figures/pro3fin.png>]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.50006pt on input line 11.
+
+Underfull \hbox (badness 2050) in paragraph at lines 21--23
+[]\T1/pplj/m/n/10 A ja-va wrap-per/cli-ent for the spo-tify web api.  [][]$\T1/
+fvm/m/n/10 https : / / github . com /
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 25--28
+[]\T1/pplj/m/n/10 The py-thon stan-dard li-bra-ry do-cu-men-ta-ti-on - 26.4.3. 
+pro-fi-le and cpro-fi-
+ []
+
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 389.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 389.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 569.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 569.
  (./AE_Doku.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 389.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 389.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 569.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 569.
 Package rerunfilecheck Info: File `AE_Doku.out' has not changed.
-(rerunfilecheck)             Checksum: 0CA8088AEB6BA19A5EADFCA8C5277D84;2130.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 389.
+(rerunfilecheck)             Checksum: 472B98FCCA906715214C03CFF4CD80BD;2113.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 569.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18380 strings out of 492995
- 315464 string characters out of 6132704
- 682432 words of memory out of 5000000
- 21483 multiletter control sequences out of 15000+600000
+ 18564 strings out of 492995
+ 317928 string characters out of 6132703
+ 685546 words of memory out of 5000000
+ 21580 multiletter control sequences out of 15000+600000
  110854 words of font info for 148 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 62i,24n,87p,8818b,14030s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,24n,87p,8818b,14707s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 }{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{/us
 r/local/texlive/2017/texmf-dist/fonts/enc/dvips/iwona/ec-iwona.enc}</usr/local/
@@ -1416,16 +1551,17 @@ local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2017/te
-xmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/local/texlive/2017/texmf-di
-st/fonts/type1/nowacki/iwona/iwonar.pfb></usr/local/texlive/2017/texmf-dist/fon
-ts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
-1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/p
-alatino/uplri8a.pfb>
-Output written on AE_Doku.pdf (8 pages, 238326 bytes).
+/2017/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/nowacki/iwona/iwonab.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/nowacki/iwona/iwonar.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/p
+alatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino
+/uplri8a.pfb>
+Output written on AE_Doku.pdf (13 pages, 333369 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
- 325 compressed objects within 4 object streams
- 108 named destinations out of 1000 (max. 500000)
- 22763 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 481 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
+ 178 named destinations out of 1000 (max. 500000)
+ 22780 words of extra memory for PDF output out of 24883 (max. 10000000)
 

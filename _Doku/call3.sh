@@ -1,0 +1,1 @@
+python cutToLen.py generatedTestData100_0.5dupFac.txt 40

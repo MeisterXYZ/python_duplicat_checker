@@ -11,4 +11,19 @@ Jonathan Hartley.
 \newblock \url{https://wiki.python.org/moin/TimeComplexity}.
 \newblock Zuletzt bearbeitet: 05.06.2017, Zugriff: 01.02.2018.
 
+\bibitem{SptfyTrackID}
+Spotify uris and ids - spotify web api user guide.
+\newblock
+  \url{https://developer.spotify.com/web-api/user-guide/#spotify-uris-and-ids}.
+\newblock Zugriff: 01.02.2018.
+
+\bibitem{API}
+A java wrapper/client for the spotify web api.
+\newblock \url{https://github.com/thelinmichael/spotify-web-api-java}.
+
+\bibitem{CPROF}
+The python standard library documentation - 26.4.3. profile and cprofile module
+  reference.
+\newblock \url{https://docs.python.org/2/library/profile.html#module-cProfile}.
+
 \end{thebibliography}
