@@ -166,7 +166,7 @@ Als Kollisions-Auflösungs-Strategie soll im Rahmen der Umsetzung das Verfahren 
 
 \begin{table}[h!]
 	\centering 
-	\begin{tabular}{l|c|c|c|c|c|}
+	\begin{tabular}{|l|c|c|c|c|c|}
 		\hline 
 		Operation & average-case & worst-case \\ 
 		\hline 
@@ -449,7 +449,7 @@ Die Verbesserung ist marginal. Bei mehrfachem Messen zeigte sich, dass durch Sch
 
 \begin{table}[h!]
 	\centering 
-	\begin{tabular}{l|c|c|c|c|}
+	\begin{tabular}{|l|c|c|c|c|}
 		\hline 
 		Durchlauf & Vor Tailoring gesamt & Nach T. gesamt & Vor T. hash() & Nach T. hash()\\ 
 		\hline
@@ -495,62 +495,252 @@ Da in dieser Umsetzung bereits die python-Standardfunktionen genutzt werden, sol
 Die Verbesserung wird erst ersichtlich, wenn man die Anzahl der URIs in der Liste deutlich erhöht. Ab \(n=10.000.000\) zeigt sich der Effekt:\\
 \begin{figure}[h!]
 	\centering 
-	\includegraphics[width=0.75\columnwidth]{pro3fin} 
+	\includegraphics[width=0.6\columnwidth]{pro3fin} 
 	\caption[Zusammenfassung Optimierung Alg. 3]{Zusammenfassung der Optimierung von Algorithmus 3}
 \end{figure}\
 
 
-
 \subsection{Wie wird gemessen?}
-Gemessen wird mit Python zeug simple Algebra
-weglassen output-file
-ausgabe ins terminal
-Nutzung mehrerer Ausgabe-Files 
-Nutzung sh script
+DRT
+Damit soll Optimierung in diesem Projekt abgeschlossen betrachtet ... und gehen ins Rennen für Zeitmessungen.\\
+Fertig zu Nutzung unter 05...\\
 
-Gemessen werden pro Algo verscheidene Instanzen:
-- Größe variiert
-- Ausgangs-File variiert
+Die Laufzeit wird mithilfe der Funktion \textit{time() }des python-Moduls \textit{time} gemessen. Die Funktion \textit{time()} liefert die seit dem 1.1.1970 vergangene Zeit in Sekunden als Gleitkommazahl. \cite{TIME} Nach dem folgenden Schema wird somit die Laufzeit errechnet und in der Konsole ausgegeben.\\
+\lstinputlisting[language=python]{pyCode2.py}
 
-?wird das erst später beschrieben?
--> Boxplot
--> Aus
- 
- \subsection{Was passiert jetzt?}
+DRT
+Für messen ganzer Reihe so:
+\begin{enumerate}[noitemsep]
+	\item Erzeugen Ausgangsdaten per \textit{testDataGenerator.py} oder Java Anwendung \textit{realDataGetter}
+	\item Erstellen mehrerer Playlists mit steigender Titelzahl mittels \textit{cutToLen.py} und  \textit{shCutToLen.sh}
+	\item Ausführen der zu untersuchenden Implementierung für alle generierten \textit{.txt}-Files mittes shell-Skript \textit{shRunScript.sh}
+\end{enumerate}\
 
-Vglf Test real
-theo lauf
-grafischer vgl
-statistischer hypotest
+DRT
+Das sh skript und die zur messung bla sind in 04\\
+
+DRT
+Was fangen wir damit an?\\
+\begin{enumerate}[noitemsep]
+		\item Vglf Test real
+		\item theo lauf
+		\item grafischer vgl
+		\item statistischer hypotest
+\end{enumerate}\
 
 
 \section{Vergleich Echt vs. Test-Daten}
+DRT
+Genommen wird:
+Echt-Daten: 3 vesch Ausg-künstlert
+Liste entspr gekürtz uaf n
+3x Test Daten der lännge orignal erfragte list, dup nachempfunden
+auch auf n 
+
+Messungen 3x Mittelwert:
+
+Ergebnis so:
+
 \subsection{Haupt-Algorithmus}
+
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=0.7\columnwidth]{tr1} 
+	\caption[DRT]{DRT}
+\end{figure}\
+
 DRT\\
-Was gibt's?
-Nach dem Vergleich: Auf Echt.
+Kann man jetzt nicht so genau sagen.
+Nehmen aber im Folgenden REAL
+
 
 \subsection{Vergleichs-Algorithmus 1}
+
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=0.7\columnwidth]{tr2} 
+	\caption[DRT]{DRT}
+\end{figure}\
+
 DRT\\
-Was gibt's?
+Analog 1
 Nach dem Vergleich: Auf Echt.
 
 \subsection{Vergleichs-Algorithmus 2}
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=0.7\columnwidth]{tr3} 
+	\caption[DRT]{DRT}
+\end{figure}\
+
+
 DRT\\
-Was gibt's?
+Hier halt nicht so stark.
 Nach dem Vergleich: Auf Echt.
 
 \section{Vergleich mit Theoretischer Laufzeit}
+
+betrachtet: Aufscheteigendes n\\
+Dazu: Boxplot.\\
+Als versch Werte pro n:\\
+- Drei Versch Ausgangskünstler\\
+- Drei mal\\
+
+Einmal so, zum besseren Betrachten Skalieren mit theo laufz.\\
+
 \subsection{Haupt-Algorithmus}
+
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=\columnwidth]{bp1} 
+	\caption[DRT]{DRT}
+\end{figure}\
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=\columnwidth]{bp2} 
+	\caption[DRT]{DRT}
+\end{figure}\
+
 \subsection{Vergleichs-Algorithmus 1}
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=\columnwidth]{bp3} 
+	\caption[DRT]{DRT}
+\end{figure}\
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=\columnwidth]{bp4} 
+	\caption[DRT]{DRT}
+\end{figure}\
+
+
 \subsection{Vergleichs-Algorithmus 2}
+
+
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=\columnwidth]{bp5} 
+	\caption[DRT]{DRT}
+\end{figure}\
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=\columnwidth]{bp6} 
+	\caption[DRT]{DRT}
+\end{figure}\
 
 \section{Vergleich der Algorithmen}
 \subsection{Grafischer Vergleich}
-Alle drei in einen Graphen. Wird bestimmt lustig.
+
+Laufzeitmessung für folgende Probleminstanzen durchgeführt:
+\begin{itemize}[noitemsep]
+	\item Für wachsendes  \(n = \{20,40,...,1000\}\)
+	\subitem Pro \(n\): 10 verschiedene Echtdaten-Tracklisten
+	\subsubitem Pro Liste: 3 Messdurchläufe
+\end{itemize}
+
+DRT
+Die Messreihen wurden über Ablehnung von Messungen außerhalb des Bereiches \([\mu-\sigma,\mu+\sigma]\) bereinigt, wobei \(\mu\) der Erwartungswert und \(\sigma\) die Standardabweichung der Messwerte ist.\\
+
+Hier mal Laufzeiten aller drei in einem Graph.
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=\columnwidth]{compare1} 
+	\caption[DRT]{DRT}
+\end{figure}\
+
+
+Um noch bisschen besseren Eindruck zu gewinnen:\\
+Für 1 vs. 2 mal höhere laufzeiten peprüft
+\begin{itemize}[noitemsep]
+	\item Für wachsendes  \(n = \{2000,4000,...,100.000\}\)
+	\subitem Pro \(n\): 5 verschiedene Echtdaten-Tracklisten
+	\subsubitem Pro Liste: 3 Messdurchläufe
+\end{itemize}
+
+wurde aber nuf für 5 Interpreten gemacht, weil so harter Ansatz zu hart und abfrage API doch zeitintesnsiv.
+
+Sieht so aus:
+
+\begin{figure}[h!]
+	\centering 
+	\includegraphics[width=\columnwidth]{compare2} 
+	\caption[DRT]{DRT}
+\end{figure}\
+
+Man erkennt bei erstem deutliche Sprünge
+
+
+Bei betrachtung von Algo siehe kapitel wird erkenntlich, dass das die übertragung in neue tabelle im Pseudocode in zielel ist
+
+Das ist im original dict praktisch auch zu erhahnen 
+
+
 
 \subsection{Statistischer Hypothesen-Test}
-Was eig gegen wen?
+
+Wenn man sich die Kurve anschaut, Grafisch anzunehmen:\\
+\(Alg3_{Laufzeit} < Alg1_{Laufzeit} < Alg2_{Laufzeit}\)\\
+
+Da können wir eigentlich nur mal schaeun ab welcher größe playlist das so stimmt.
+Per Hypothesentest also drei Tests:\\
+\begin{enumerate}[noitemsep]
+	\item Algorithmus 1 schneller als Algorithmus 2
+	\item Algorithmus 3 schneller als Algorithmus 2
+	\item Algorithmus 3 schneller als Algorithmus 1
+\end{enumerate}
+
+Messungen finden dabei im Bereich \(n = \{20,40,...,1000\}\) statt.\\
+
+
+\textbf{Algorithmus 1 schneller als Algorithmus 2}\\
+Vermutung ist alsi Algorithmus 1 ist schneller als Algorithmus 2\\
+Null-Hypothese daher: \(H_0: \tilde{ \mu_1 } \ge \tilde{\mu_2} \) \\
+Entsprechend ergibt sich Alternativ-Hypothese: \(H_0: \tilde{ \mu_1 } < \tilde{\mu_2} \) \\
+versuch Nullhypothese zu widerlegen. Signifikanzniveau \(\alpha = 0,02\%\)  und n = 30 Messungen, Festlegung Fehler-Wahrscheinlichkeit: 2\% ???? \\
+Bilde Differenz der Laufzeiten, welche auf selber Probleminstanz gemessen wurden: \(d_i = MesswertAlg2_i - MesswertAlg1_i\)\\
+Errechne t-Wert \(t=\sqrt{n}\frac{\mu_d}{\sigma_d} \) und vergleiche mit \(t(0,98;29)\approx2,15\)\\
+Nullhypothese ablehnen, wenn \(t<2,15\)\\
+
+
+\begin{table}[h!]
+	\centering 
+	\begin{tabular}{|l|c|c|c|c|}
+	\hline
+				n   &		\(t=\sqrt{n}\frac{\mu_d}{\sigma_d} \)				& \(t(0,98;29)\) &	Ergebnis\\
+	\hline
+	20   	&	-4,675596311	& 2,15 &	Null-Hypothese nicht abgelenht\\
+	\hline
+	40   	&	-2,267865616	& 2,15 &	Null-Hypothese nicht abgelenht\\
+	\hline
+	...   &		...			  & 2,15 &		...\\
+	\hline
+	400   &		1,551055352   &	 2,15 &	Null-Hypothese nicht abgelenht\\
+	\hline
+	420   &		0,540433623   &	 2,15 &	Null-Hypothese nicht abgelenht\\
+	\hline
+	440   &		4,598993754   &	 2,15 &	Null-Hypothese abgehelhnt\\
+	\hline
+	460   &		3,17978148    &	 2,15 &	Null-Hypothese abgehelhnt\\
+	\hline
+	...   &		...			  &	 2,15 &	...\\
+	\hline
+	1000   &		35,12686104	&  2,15 &	Null-Hypothese abgehelhnt\\
+	\hline
+	\end{tabular}\\
+	\caption[Ergebnisse Tailoring]{Ergebnisse des Tailorings: Benötigte Zeit gesamt und für hash-Funktion}
+\end{table}\
+
+\textbf{Algorithmus 3 schneller als Algorithmus 2}\\
+
+
+\textbf{Algorithmus 3 schneller als Algorithmus 1}\\
+Königsdisziplin.
+
+
+
+\section{Fazit}
+
+wen schon py dann standard funktionen
 
 
 %----------------------------------------------------------------------------------------

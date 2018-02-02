@@ -25,5 +25,12 @@ A java wrapper/client for the spotify web api.
 The python standard library documentation - 26.4.3. profile and cprofile module
   reference.
 \newblock \url{https://docs.python.org/2/library/profile.html#module-cProfile}.
+\newblock Zugriff: 01.02.2018.
+
+\bibitem{TIME}
+The python standard library documentation - 15.3. time — time access and
+  conversions.
+\newblock \url{https://docs.python.org/2/library/time.html#time.time}.
+\newblock Zugriff: 02.02.2018.
 
 \end{thebibliography}

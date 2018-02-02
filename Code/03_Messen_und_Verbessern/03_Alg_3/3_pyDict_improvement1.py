@@ -30,5 +30,5 @@ else:
     #writing unique list to file
     # with open ('Output_pyDict.txt' , 'w') as outputFile:
     #     for uri in uriDict:
-    #         outputFile.write('https://open.spotify.com/track/'+i)
+    #         outputFile.write('https://open.spotify.com/track/'+uri)
     #         outputFile.write('\n')

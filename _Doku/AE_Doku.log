@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.19)  1 FEB 2018 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.19)  2 FEB 2018 21:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1495,13 +1495,297 @@ Underfull \hbox (badness 10000) in paragraph at lines 493--494
 <Figures/pro3fin.png, id=357, 971.63pt x 592.2125pt>
 File: Figures/pro3fin.png Graphic file (type png)
  <use Figures/pro3fin.png>
-Package pdftex.def Info: Figures/pro3fin.png used on input line 499.
-(pdftex.def)             Requested size: 277.5pt x 169.13474pt.
+Package pdftex.def Info: Figures/pro3fin.png used on input line 498.
+(pdftex.def)             Requested size: 222.00226pt x 135.3114pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 504--507
+
+ []
+
+[11 <./Figures/pro2fin.png> <./Figures/pro3fin.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
+
+ []
+
+(./pyCode2.py
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+
+Package xcolor Warning: Incompatible color definition on input line 10.
+
+
+Package xcolor Warning: Incompatible color definition on input line 10.
+
+
+Package xcolor Warning: Incompatible color definition on input line 10.
+
+
+Package xcolor Warning: Incompatible color definition on input line 10.
+
+
+Package xcolor Warning: Incompatible color definition on input line 10.
+
+
+Package xcolor Warning: Incompatible color definition on input line 10.
+
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 17.
+
+
+Package xcolor Warning: Incompatible color definition on input line 17.
+
+
+Package xcolor Warning: Incompatible color definition on input line 17.
+
+
+Package xcolor Warning: Incompatible color definition on input line 17.
+
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 519--521
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--524
+
+ []
+
+<Figures/tr1.png, id=369, 906.38625pt x 512.91624pt>
+File: Figures/tr1.png Graphic file (type png)
+ <use Figures/tr1.png>
+Package pdftex.def Info: Figures/tr1.png used on input line 548.
+(pdftex.def)             Requested size: 258.99887pt x 146.56615pt.
+
+[12] <Figures/tr2.png, id=402, 904.37875pt x 511.9125pt>
+File: Figures/tr2.png Graphic file (type png)
+ <use Figures/tr2.png>
+Package pdftex.def Info: Figures/tr2.png used on input line 561.
+(pdftex.def)             Requested size: 258.99887pt x 146.59958pt.
+
+<Figures/tr3.png, id=403, 902.37125pt x 511.9125pt>
+File: Figures/tr3.png Graphic file (type png)
+ <use Figures/tr3.png>
+Package pdftex.def Info: Figures/tr3.png used on input line 572.
+(pdftex.def)             Requested size: 258.99887pt x 146.92764pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11 <./Figures/pro2fin.png>] (./AE_Doku.bbl [12 <./Figures/pro3fin.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--588
+
+ []
+
+[13 <./Figures/tr1.png> <./Figures/tr2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
+
+ []
+
+<Figures/bp1.png, id=413, 1233.60875pt x 511.9125pt>
+File: Figures/bp1.png Graphic file (type png)
+ <use Figures/bp1.png>
+Package pdftex.def Info: Figures/bp1.png used on input line 595.
+(pdftex.def)             Requested size: 370.0pt x 153.53587pt.
+
+<Figures/bp2.png, id=414, 1117.17375pt x 473.77pt>
+File: Figures/bp2.png Graphic file (type png)
+ <use Figures/bp2.png>
+Package pdftex.def Info: Figures/bp2.png used on input line 600.
+(pdftex.def)             Requested size: 370.0pt x 156.90845pt.
+
+<Figures/bp3.png, id=415, 1232.605pt x 519.9425pt>
+File: Figures/bp3.png Graphic file (type png)
+ <use Figures/bp3.png>
+Package pdftex.def Info: Figures/bp3.png used on input line 607.
+(pdftex.def)             Requested size: 370.0pt x 156.07123pt.
+
+[14 <./Figures/tr3.png> <./Figures/bp1.png> <./Figures/bp2.png>]
+<Figures/bp4.png, id=426, 1233.60875pt x 505.89pt>
+File: Figures/bp4.png Graphic file (type png)
+ <use Figures/bp4.png>
+Package pdftex.def Info: Figures/bp4.png used on input line 612.
+(pdftex.def)             Requested size: 370.0pt x 151.72957pt.
+
+<Figures/bp5.png, id=427, 1228.59pt x 512.91624pt>
+File: Figures/bp5.png Graphic file (type png)
+ <use Figures/bp5.png>
+Package pdftex.def Info: Figures/bp5.png used on input line 622.
+(pdftex.def)             Requested size: 370.0pt x 154.47087pt.
+
+<Figures/bp6.png, id=428, 1234.6125pt x 510.90875pt>
+File: Figures/bp6.png Graphic file (type png)
+ <use Figures/bp6.png>
+Package pdftex.def Info: Figures/bp6.png used on input line 627.
+(pdftex.def)             Requested size: 370.0pt x 153.11009pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15 <./Figures/bp3.png> <./Figures/bp4.png> <./Figures/bp5.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 641--643
+
+ []
+
+<Figures/compare1.png, id=439, 1071.00125pt x 616.3025pt>
+File: Figures/compare1.png Graphic file (type png)
+
+<use Figures/compare1.png>
+Package pdftex.def Info: Figures/compare1.png used on input line 647.
+(pdftex.def)             Requested size: 370.0pt x 212.9161pt.
+ [16 <./Figures/bp6.png> <./Figures/compare1.png>]
+<Figures/compare2.png, id=448, 1057.9525pt x 595.22375pt>
+File: Figures/compare2.png Graphic file (type png)
+
+<use Figures/compare2.png>
+Package pdftex.def Info: Figures/compare2.png used on input line 666.
+(pdftex.def)             Requested size: 370.0pt x 208.16795pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 681--683
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 684--686
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--693
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--703
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
+
+ []
+
+[17 <./Figures/compare2.png>] (./AE_Doku.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.50006pt on input line 11.
 
@@ -1511,32 +1795,32 @@ fvm/m/n/10 https : / / github . com /
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 25--28
+Underfull \hbox (badness 1406) in paragraph at lines 25--29
 []\T1/pplj/m/n/10 The py-thon stan-dard li-bra-ry do-cu-men-ta-ti-on - 26.4.3. 
 pro-fi-le and cpro-fi-
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 569.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 569.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
+ [18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
  (./AE_Doku.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 569.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 569.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
 Package rerunfilecheck Info: File `AE_Doku.out' has not changed.
-(rerunfilecheck)             Checksum: 472B98FCCA906715214C03CFF4CD80BD;2113.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 569.
+(rerunfilecheck)             Checksum: 1D7FACD7219E7A74596F1BF0B9B22E9C;2083.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18564 strings out of 492995
- 317928 string characters out of 6132703
- 685546 words of memory out of 5000000
- 21580 multiletter control sequences out of 15000+600000
- 110854 words of font info for 148 fonts, out of 8000000 for 9000
+ 18683 strings out of 492995
+ 319664 string characters out of 6132703
+ 686572 words of memory out of 5000000
+ 21633 multiletter control sequences out of 15000+600000
+ 112363 words of font info for 153 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  62i,24n,87p,8818b,14707s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
@@ -1555,13 +1839,14 @@ sr/local/texlive/2017/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local
 exmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2017/texmf-dis
 t/fonts/type1/nowacki/iwona/iwonab.pfb></usr/local/texlive/2017/texmf-dist/font
 s/type1/nowacki/iwona/iwonar.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
-1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/p
-alatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino
-/uplri8a.pfb>
-Output written on AE_Doku.pdf (13 pages, 333369 bytes).
+1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/u
+rw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/pala
+tino/uplri8a.pfb>
+Output written on AE_Doku.pdf (18 pages, 750682 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
- 428 compressed objects within 5 object streams
- 178 named destinations out of 1000 (max. 500000)
- 22780 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 584 PDF objects out of 1000 (max. 8388607)
+ 502 compressed objects within 6 object streams
+ 225 named destinations out of 1000 (max. 500000)
+ 22835 words of extra memory for PDF output out of 24883 (max. 10000000)
 
