@@ -3,44 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: AE_Doku.aux
 The style file: unsrt.bst
 Database file #1: bib.bib.bib
-You've used 6 entries,
+You've used 7 entries,
             1791 wiz_defined-function locations,
-            476 strings with 4506 characters,
-and the built_in function-call counts, 779 in all, are:
-= -- 65
-> -- 22
+            480 strings with 4647 characters,
+and the built_in function-call counts, 879 in all, are:
+= -- 73
+> -- 23
 < -- 0
-+ -- 11
++ -- 12
 - -- 5
 * -- 14
-:= -- 105
-add.period$ -- 18
-call.type$ -- 6
-change.case$ -- 6
+:= -- 114
+add.period$ -- 20
+call.type$ -- 7
+change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 35
-empty$ -- 110
+cite$ -- 7
+duplicate$ -- 40
+empty$ -- 128
 format.name$ -- 5
-if$ -- 192
+if$ -- 219
 int.to.chr$ -- 0
-int.to.str$ -- 6
+int.to.str$ -- 7
 missing$ -- 2
-newline$ -- 33
+newline$ -- 37
 num.names$ -- 2
-pop$ -- 43
+pop$ -- 49
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 19
+skip$ -- 25
 stack$ -- 0
 substring$ -- 0
-swap$ -- 6
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 2
-width$ -- 7
-write$ -- 58
+width$ -- 8
+write$ -- 65

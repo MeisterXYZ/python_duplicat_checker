@@ -27,6 +27,11 @@ The python standard library documentation - 26.4.3. profile and cprofile module
 \newblock \url{https://docs.python.org/2/library/profile.html#module-cProfile}.
 \newblock Zugriff: 01.02.2018.
 
+\bibitem{SNAKE}
+Snakeviz - a browser based graphical viewer for the output of python’s
+  cprofile module.
+\newblock \url{https://jiffyclub.github.io/snakeviz/}.
+
 \bibitem{TIME}
 The python standard library documentation - 15.3. time — time access and
   conversions.

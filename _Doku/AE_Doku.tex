@@ -173,6 +173,7 @@ Als Kollisions-Auflösungs-Strategie soll im Rahmen der Umsetzung das Verfahren 
 		Element einfügen & \(O(1)\) & \(O(n)\)\\
 		\hline 
 		Auf Element zugreifen & \(O(1)\) & \(O(n)\)\\
+		\hline 
 	\end{tabular}\\
 	\caption[Zugriffs-Komplexität im python dict]{Zugriffs-Komplexität im python dict \cite{TimeComplexityPy}}
 \end{table}\
@@ -413,7 +414,7 @@ Für den Hauptalgorithmus liegt die entsprechende \textit{.py}-Datei im Abgabeor
 Für das Profiling wird ein mittels \textit{testDataGenerator.py} erstelltes \textit{.txt}-File mit Größe \(n=100.000\) und der Duplikat-Wahrscheinlichkeit von \(dupFac = 2\%\) verwendet.\\
 Das Profiling erfolgt über die Nutzung des python-Profilers \textit{cProfile} \cite{CPROF}.\\
 
-Die erste Visualisierung des Profils mittels \textit{Snakeviz} zeigt:\\
+Die erste Visualisierung des Profils mittels \textit{Snakeviz}\cite{SNAKE}zeigt:\\
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=0.75\columnwidth]{pro1} 
@@ -439,12 +440,10 @@ https://open.spotify.com/track/1Qi256uJuMihknGuuFcQoC
 \end{lstlisting}
 
 Der entsprechend angepasste Algorithmus ist im Abgabeordner unter\\ \textit{Code/03\_Messen\_und\_Verbessern/01\_Alg\_1/1\_dictLike\_improvement2.py} enthalten. Die Ausgabe-Funktion muss für eine Anwendung um den statischen Teil der URIs erweitert werden. Dies wurde in der Datei, obgleich die Ausgabefunktion für die Messungen auskommentiert bleibt, getan.\\
-Die Visualisierung des Profilings zeigt:\\
-\textit{Code/03\_Messen\_und\_Verbessern/01\_Alg\_1/1\_dictLike\_improvement1.py} enthalten.\\
 
-Da die Profile bezüglich ihrer gesamt-benötigten Laufzeit zu nahe beieinander lagen, wurde das Profiling der vorherigen Version \textit{1\_dictLike\_improvement1.py} und das Profiling der Verbesserten Variante mit einem \textit{.txt}-File der Größe \(n=1.000.000\) wiederholt.
+Da die Profile bezüglich ihrer gesamt benötigten Laufzeit für einen sichtbaren Unterschied zu nahe beieinander lagen, wurde das Profiling der vorherigen Version \textit{1\_dictLike\_improvement1.py} und das Profiling der Verbesserten Variante mit einem \textit{.txt}-File der Größe \(n=1.000.000\) wiederholt.
 
-Die Verbesserung ist marginal. Bei mehrfachem Messen zeigte sich, dass durch Schwankungen anhand Gesamt-Laufzeit nicht erkannt werden konnte, welche Implementierung schneller ist. Durch das Profiling jedoch stellte sich heraus, dass die benötigte Zeit für das Anwenden der Hash-Funktion bei in jedem Profil für den zweiten Algorithmus geringer war.
+Die Verbesserung ist marginal. Bei mehrfachem Messen zeigte sich, dass durch Schwankungen anhand Gesamt-Laufzeit nicht erkannt werden konnte welche Implementierung schneller ist. Durch das Profiling jedoch stellte sich heraus, dass die benötigte Zeit für das Anwenden der Hash-Funktion bei in jedem Profil für den zweiten Algorithmus geringer war, weshalb die Anpassung im Rahmen des Tailorings als sinnvoll anerkannt und beibehalten werden kann.
 
 
 \begin{table}[h!]
@@ -501,247 +500,294 @@ Die Verbesserung wird erst ersichtlich, wenn man die Anzahl der URIs in der List
 
 
 \subsection{Wie wird gemessen?}
-DRT
-Damit soll Optimierung in diesem Projekt abgeschlossen betrachtet ... und gehen ins Rennen für Zeitmessungen.\\
-Fertig zu Nutzung unter 05...\\
-
-Die Laufzeit wird mithilfe der Funktion \textit{time() }des python-Moduls \textit{time} gemessen. Die Funktion \textit{time()} liefert die seit dem 1.1.1970 vergangene Zeit in Sekunden als Gleitkommazahl. \cite{TIME} Nach dem folgenden Schema wird somit die Laufzeit errechnet und in der Konsole ausgegeben.\\
-\lstinputlisting[language=python]{pyCode2.py}
-
-DRT
-Für messen ganzer Reihe so:
+Mit den vorangegangen Kapiteln 5.1 - 5.3 soll die Optimierung der Implementierungen für das Projekt als abgeschlossen betrachtet werden. Eine ausführbare Implementierung für alle drei Algorithmen findet sich im Abgabeordner unter \textit{/05\_Finale\_Implementierung/}.\\ 
+Nun sollen die Implementierungen dahingehend erweitert werden, um mit ihnen Zeitmessungen durchführen zu können.
+Die Laufzeit wird dabei mithilfe der Funktion \textit{time() }des python-Moduls \textit{time} gemessen. Die Funktion \textit{time()} liefert die seit dem 1.1.1970 vergangene Zeit in Sekunden als Gleitkommazahl. \cite{TIME} Nach dem folgenden Schema wird somit die Laufzeit errechnet und in der Konsole ausgegeben.\\
+\lstinputlisting[language=python]{pyCode2.py}\
+Um mehrere Messungen für eine Messreihe mit steigendem \(n\) durchzuführen wird wie folgt verfahren.
 \begin{enumerate}[noitemsep]
-	\item Erzeugen Ausgangsdaten per \textit{testDataGenerator.py} oder Java Anwendung \textit{realDataGetter}
-	\item Erstellen mehrerer Playlists mit steigender Titelzahl mittels \textit{cutToLen.py} und  \textit{shCutToLen.sh}
-	\item Ausführen der zu untersuchenden Implementierung für alle generierten \textit{.txt}-Files mittes shell-Skript \textit{shRunScript.sh}
+	\item Erzeugen der Ausgangsdaten per \textit{testDataGenerator.py} oder Java Anwendung \textit{realDataGetter}
+	\item Erstellen mehrerer Playlists mit steigender Titelzahl \(n\) auf Grundlage der Ausgangsdaten mittels \textit{cutToLen.py} und \textit{shCutToLen.sh}
+	\item Ausführen der zu untersuchenden Implementierung für alle generierten \textit{.txt}-Files mittes zuvor angepasstem shell-Skript \textit{shRunScript.sh}
 \end{enumerate}\
-
-DRT
-Das sh skript und die zur messung bla sind in 04\\
-
-DRT
-Was fangen wir damit an?\\
+Das shell-Skript \textit{shRunScript.sh} und die für die Laufzeit-Messungen angepassten Implementierungen sind im Abgabeordner unter \textit{/04\_Mess-Skripte/} enthalten.\\
+Damit sind die Vorbereitungen für die Messungen abgeschlossen. In den folgenden Kapiteln sollen die untenstehenden Aspekte untersucht werden.
 \begin{enumerate}[noitemsep]
-		\item Vglf Test real
-		\item theo lauf
-		\item grafischer vgl
-		\item statistischer hypotest
+		\item Vergleich der Laufzeit zwischen Echt- und Test-Daten.
+		\item Abgleich der Laufzeit gegen die theoretische Laufzeit der Algorithmen.
+		\item Grafischer Vergleich der Algorithmen untereinander.
+		\item Durchführung statistischer Hypothesentests.
 \end{enumerate}\
 
 
 \section{Vergleich Echt vs. Test-Daten}
-DRT
-Genommen wird:
-Echt-Daten: 3 vesch Ausg-künstlert
-Liste entspr gekürtz uaf n
-3x Test Daten der lännge orignal erfragte list, dup nachempfunden
-auch auf n 
-
-Messungen 3x Mittelwert:
-
-Ergebnis so:
-
-\subsection{Haupt-Algorithmus}
-
+In diesem Kapitel sollen stichprobenartig die Laufzeiten der einzelnen Algorithmen beim Verarbeiten von Echt- und Test-Daten betrachtet werden. Dabei wird wie folgt verfahren.
+\begin{enumerate}[noitemsep]
+	\item Für drei verschiedene Ausgangs-Künstler mithilfe des Echt-Daten-Abgreifers Ausgangs-Playlists erzeugen.
+	\item Mithilfe des Test-Daten-Generators drei Listen erstellen, wobei jede einer Echt-Daten-Liste in Länge und Dupikat-Faktor nachempfunden wird
+	\item Einkürzen der drei Listen auf die Längen \(n=\{33.000,100.000,300.000\} \)
+	\item Durchführen dreier Messungen pro Liste und Algorithmus.
+\end{enumerate}\
+Die unten dargestellten Graphen zeigen die aus den drei Messungen erzeugten Mittelwerte.\\
+Der Vergleich für den Haupt-Algorithmus zeigt folgenden Graphen:
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=0.7\columnwidth]{tr1} 
-	\caption[DRT]{DRT}
+	\caption[Vergleich Echt- und Test-Daten für Alg.1]{Vergleich Echt- und Test-Daten für Algorithmus 1}
 \end{figure}\
 
-DRT\\
-Kann man jetzt nicht so genau sagen.
-Nehmen aber im Folgenden REAL
-
-
-\subsection{Vergleichs-Algorithmus 1}
-
+Die Graphen für die Vergleichs-Algorithmen zeigen ein ähnliches Bild.
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=0.7\columnwidth]{tr2} 
-	\caption[DRT]{DRT}
+	\caption[Vergleich Echt- und Test-Daten für Alg.2]{Vergleich Echt- und Test-Daten für Algorithmus 2}
 \end{figure}\
-
-DRT\\
-Analog 1
-Nach dem Vergleich: Auf Echt.
-
-\subsection{Vergleichs-Algorithmus 2}
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=0.7\columnwidth]{tr3} 
-	\caption[DRT]{DRT}
+	\caption[Vergleich Echt- und Test-Daten für Alg.3]{Vergleich Echt- und Test-Daten für Algorithmus 3}
 \end{figure}\
 
-
-DRT\\
-Hier halt nicht so stark.
-Nach dem Vergleich: Auf Echt.
-
-\section{Vergleich mit Theoretischer Laufzeit}
-
-betrachtet: Aufscheteigendes n\\
-Dazu: Boxplot.\\
-Als versch Werte pro n:\\
-- Drei Versch Ausgangskünstler\\
-- Drei mal\\
-
-Einmal so, zum besseren Betrachten Skalieren mit theo laufz.\\
+Es lässt sich festhalten, dass sich die Laufzeiten für alle drei Algorithmen zumindest für die vorgenommenen Stichproben nicht signifikant voneinander unterscheiden. Eventuelle erkennbare Unterschiede, wie das abweichen der Laufzeiten für \(n=100.000\) in Algorithmus 2 könnten mit weiteren Laufzeitmessungen untersucht werden. Für die Projektarbeit soll dieser Verglich jedoch genügen.\\ 
+Für alle folgenden Messungen sollen Echt-Daten verwendet werden.
+\pagebreak
+\section{Vergleich mit theoretischer Laufzeit}
+Um pro Algorithmus den Vergleich mit der theoretischen Laufzeit anzustellen, werden pro Algorithmus folgende Laufzeitmessungen durchgeführt:
+\begin{itemize}[noitemsep]
+	\item Pro Messreihe: Playlists mit aufsteigender Titel-Anzahl \(n = \{5000,10.000,...,100.000\}\)
+	\item Durchführung von 9 Messreihen:
+	\subitem Für drei verschiedene Playlists mit unterschiedlichem Ausgangs-Künstler
+	\subsubitem Durchführen dreier Messungen pro Echt-Daten-Playlist.
+\end{itemize}\
+Die Messergebisse werden zunächst in einem Boxplot-Diagramm dargestellt. Zur Überprüfung der theoretischen Laufzeit wird die y-Achse des Diagrammes entsprechend der jeweiligen theoretischen Laufzeit skaliert.
 
 \subsection{Haupt-Algorithmus}
-
+Das Boxplot-Diagramm für den Haupt-Algorithmus zeigt das folgende Bild:
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=\columnwidth]{bp1} 
-	\caption[DRT]{DRT}
+	\caption[Darstellung Laufzeitmessungen Alg. 1 im Boxplot-Diagramm]{Darstellung der Laufzeitmessungen für Algorithmus 1 im Boxplot-Diagramm}
 \end{figure}\
+
+Wird dieser mit der in Kapitel 1 beschriebenen theoretischen Laufzeit von \(O=(n)\) skaliert, zeigt sich das folgende Bild:
+
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=\columnwidth]{bp2} 
-	\caption[DRT]{DRT}
+	\caption[]{Laufzeitmessungen für Algorithmus 1 im skalierten Boxplot-Diagramm}
 \end{figure}\
 
+Es wird ersichtlich, dass die Laufzeiten pro Datensatz nahezu in einer Geraden liegen, was die theoretische Laufzeit bestätigt. \\
+Es lässt sich jedoch ein leichter Anstieg der Geraden erkennen. Der Grund dafür zeigt sich im unskalierten Boxplot-Diagramm. In diesem ist ein sprunghafter Anstieg der Laufzeit für die n-Werte \(n=25.000\) und \(n=90.000\) zu abzulesen. Als Ursache dafür lässt sich wiederum das Kopieren aller Werte der hash-table in die neu angelegte, vergrößerte hash-table vermuten \textit{(Siehe Kapitel 3.1 - Haupt-Algorithmus: Elemente in Array einfügen, Zeilen 32-29)}
 \subsection{Vergleichs-Algorithmus 1}
+Für den Vergleichs-Algorithmus 1 zeigt das Ausgangs-Boxplot-Diagramm und das mit der in Kapitel 1 hergeleiteten theoretischen Laufzeit von \(O=(n^2)\) skalierte Diagramm, dass die Laufzeit-Überlegung als bestätigt betrachtet werden kann.
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=\columnwidth]{bp3} 
-	\caption[DRT]{DRT}
+	\caption[]{Darstellung der Laufzeitmessungen für Algorithmus 2 im Boxplot-Diagramm}
 \end{figure}\
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=\columnwidth]{bp4} 
-	\caption[DRT]{DRT}
+	\caption[]{Laufzeitmessungen für Algorithmus 2 im skalierten Boxplot-Diagramm}
 \end{figure}\
 
 
 \subsection{Vergleichs-Algorithmus 2}
-
-
+Die Betrachtung der Laufzeiten in den entsprechenden Diagrammen für den dritten Algorithmus, zeigen, dass auch hier die theoretische Laufzeit bestätigt werden kann. Der für den Haupt-Algorithmus festgestellte sprunghafte Anstieg der Laufzeit für \(n=25.000\) und \(n=90.000\) wird ebenfalls, wenn auch sehr viel dezenter, ersichtlich.
+\pagebreak
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=\columnwidth]{bp5} 
-	\caption[DRT]{DRT}
+	\caption[]{Darstellung der Laufzeitmessungen für Algorithmus 3 im Boxplot-Diagramm}
 \end{figure}\
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=\columnwidth]{bp6} 
-	\caption[DRT]{DRT}
+	\caption[]{Laufzeitmessungen für Algorithmus 3 im skalierten Boxplot-Diagramm}
 \end{figure}\
-
+\pagebreak
 \section{Vergleich der Algorithmen}
 \subsection{Grafischer Vergleich}
-
-Laufzeitmessung für folgende Probleminstanzen durchgeführt:
+Für den grafischen Vergleich der Algorithmen-Laufzeiten untereinander, werden für allen drei Algorithmen Laufzeitmessung für die folgenden Probleminstanzen durchgeführt:
 \begin{itemize}[noitemsep]
-	\item Für wachsendes  \(n = \{20,40,...,1000\}\)
+	\item Für mehrere Playlists mit wachsende Titel-Anzahl \(n = \{20,40,...,1000\}\)
 	\subitem Pro \(n\): 10 verschiedene Echtdaten-Tracklisten
 	\subsubitem Pro Liste: 3 Messdurchläufe
-\end{itemize}
-
-DRT
-Die Messreihen wurden über Ablehnung von Messungen außerhalb des Bereiches \([\mu-\sigma,\mu+\sigma]\) bereinigt, wobei \(\mu\) der Erwartungswert und \(\sigma\) die Standardabweichung der Messwerte ist.\\
-
-Hier mal Laufzeiten aller drei in einem Graph.
+\end{itemize}\
+Die Messreihen wurden über das Ablehnen von Messungen außerhalb des Bereiches \([\mu-\sigma,\mu+\sigma]\) bereinigt, wobei \(\mu\) der Erwartungswert und \(\sigma\) die Standardabweichung der Messwerte ist.\\
+Der direkte grafische Vergleich stellt sich wie folgt dar.\\
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=\columnwidth]{compare1} 
-	\caption[DRT]{DRT}
+	\caption[]{Direkter grafischer Vergleich der Algorithmen miteinander}
 \end{figure}\
-
-
-Um noch bisschen besseren Eindruck zu gewinnen:\\
-Für 1 vs. 2 mal höhere laufzeiten peprüft
+Die Laufzeit für Algorithmus 2 nimmt, wie in der Betrachtung der theoretischen Laufzeit bestätigt exponentiell zu. Um jedoch einen besseren Eindruck für das Laufzeitverhalten von Algorithmus 1 und algorithmus 3 zu gewinnen, wird für diese ein weiterer Vergleich mit höheren \(n\)-Werten angestellt:\\
 \begin{itemize}[noitemsep]
-	\item Für wachsendes  \(n = \{2000,4000,...,100.000\}\)
-	\subitem Pro \(n\): 5 verschiedene Echtdaten-Tracklisten
+	\item Für mehrere Playlists mit wachsende Titel-Anzahl \(n = \{2000,4000,...,100.000\}\)
+	\subitem Pro \(n\): 10 verschiedene Echtdaten-Tracklisten
 	\subsubitem Pro Liste: 3 Messdurchläufe
 \end{itemize}
-
-wurde aber nuf für 5 Interpreten gemacht, weil so harter Ansatz zu hart und abfrage API doch zeitintesnsiv.
-
-Sieht so aus:
-
+In diesem Vergleich wird die Relation der Laufzeiten deutlich. Ebenfalls sind für beide Implementierungen die in Kapitel 7.1 festgestellten sprunghaften Anstiege der Laufzeiten aufgrund der hash-Tabellen-Kopier-Operationen festzustellen.
+\pagebreak
 \begin{figure}[h!]
 	\centering 
 	\includegraphics[width=\columnwidth]{compare2} 
-	\caption[DRT]{DRT}
+	\caption[]{Direkter grafischer Vergleich der Algorithmen 1 und 3 miteinander}
 \end{figure}\
-
-Man erkennt bei erstem deutliche Sprünge
-
-
-Bei betrachtung von Algo siehe kapitel wird erkenntlich, dass das die übertragung in neue tabelle im Pseudocode in zielel ist
-
-Das ist im original dict praktisch auch zu erhahnen 
-
-
+Insgesamt lässt sich aus der grafischen Betrachtung die folgende Ordnung der Algotithmen-Laufzeiten anzunehmen.\\
+\begin{equation}
+Alg3_{Laufzeit} < Alg1_{Laufzeit} < Alg2_{Laufzeit}
+\end{equation}\
 
 \subsection{Statistischer Hypothesen-Test}
-
-Wenn man sich die Kurve anschaut, Grafisch anzunehmen:\\
-\(Alg3_{Laufzeit} < Alg1_{Laufzeit} < Alg2_{Laufzeit}\)\\
-
-Da können wir eigentlich nur mal schaeun ab welcher größe playlist das so stimmt.
-Per Hypothesentest also drei Tests:\\
+Auf Grundlage der im vorherigen Kapitel durchgeführten Messungen für \(n = \{20,40,...,1000\}\) soll nun eine exakte Analyse mittels statistischer Hypothesentests durchgeführt werden. Dabei soll die angestellte Überlegung\\
+\begin{equation}
+Alg3_{Laufzeit} < Alg1_{Laufzeit} < Alg2_{Laufzeit}
+\end{equation}\
+als Ausgangspunkt verwendet werden.\\ Um zu überprüfen, ab welcher Playlist-Größe die einzelnen Teile der Relation sicher gelten, sollen durch die folgenden Hypothesentests drei Aussagen geprüft werden:
 \begin{enumerate}[noitemsep]
-	\item Algorithmus 1 schneller als Algorithmus 2
-	\item Algorithmus 3 schneller als Algorithmus 2
-	\item Algorithmus 3 schneller als Algorithmus 1
-\end{enumerate}
-
-Messungen finden dabei im Bereich \(n = \{20,40,...,1000\}\) statt.\\
-
+	\item Algorithmus 1 ist schneller als Algorithmus 2
+	\item Algorithmus 3 ist schneller als Algorithmus 2
+	\item Algorithmus 3 ist schneller als Algorithmus 1
+\end{enumerate}\
 
 \textbf{Algorithmus 1 schneller als Algorithmus 2}\\
-Vermutung ist alsi Algorithmus 1 ist schneller als Algorithmus 2\\
-Null-Hypothese daher: \(H_0: \tilde{ \mu_1 } \ge \tilde{\mu_2} \) \\
-Entsprechend ergibt sich Alternativ-Hypothese: \(H_0: \tilde{ \mu_1 } < \tilde{\mu_2} \) \\
-versuch Nullhypothese zu widerlegen. Signifikanzniveau \(\alpha = 0,02\%\)  und n = 30 Messungen, Festlegung Fehler-Wahrscheinlichkeit: 2\% ???? \\
-Bilde Differenz der Laufzeiten, welche auf selber Probleminstanz gemessen wurden: \(d_i = MesswertAlg2_i - MesswertAlg1_i\)\\
-Errechne t-Wert \(t=\sqrt{n}\frac{\mu_d}{\sigma_d} \) und vergleiche mit \(t(0,98;29)\approx2,15\)\\
-Nullhypothese ablehnen, wenn \(t<2,15\)\\
-
-
+Aus der Vermutung, dass Algorithmus 1 schneller ist, als Algorithmus 2 ergeben sich für den linksseitigen Hypothesentest die Null-Hypothese 
+\begin{equation}
+H_0: \tilde{ \mu_1 } \ge \tilde{\mu_2}
+\end{equation}\
+und die Alternativ-Hypothese
+\begin{equation}
+ H_0: \tilde{ \mu_1 } < \tilde{\mu_2}
+\end{equation}\
+wobei \(\tilde{ \mu}\) je den Mittelwerten aller Messungen für eine Probleminstanz entspricht.\\
+Nun soll überprüft werden, ob die Nullhypothese pro \(n\) bestätigt werden kann oder zu widerlegen ist. Dabei soll ein frei gewähltes Signifikanzniveau von \(\alpha = 0,02\%\)  verwendet werden.\\
+Über die Differenzen aller Messwerte \(d_i = MesswertAlg2_i - MesswertAlg1_i\) werden dazu der Erwartungswert \(\mu_d\) und die Standardabweichung \(\sigma_d \) ermittelt. Auf dieser Grundlage wird der t-Wert \(t=\sqrt{n}\frac{\mu_d}{\sigma_d} \) ermittelt und mit dem Wert der t-Funktion für \(t(0,98;29)\approx2,15\) verglichen.\\
+Die Nullhypothese ist dabei abzulehnen, wenn gilt \(t<2,15\)\\
+Das Resultat gestaltet sich wie folgt:
 \begin{table}[h!]
 	\centering 
 	\begin{tabular}{|l|c|c|c|c|}
 	\hline
 				n   &		\(t=\sqrt{n}\frac{\mu_d}{\sigma_d} \)				& \(t(0,98;29)\) &	Ergebnis\\
 	\hline
-	20   	&	-4,675596311	& 2,15 &	Null-Hypothese nicht abgelenht\\
+	20   	&	-4,675596311	& 2,15 &	Null-Hypothese nicht abgelehnt\\
 	\hline
-	40   	&	-2,267865616	& 2,15 &	Null-Hypothese nicht abgelenht\\
+	40   	&	-2,267865616	& 2,15 &	Null-Hypothese nicht abgelehnt\\
 	\hline
-	...   &		...			  & 2,15 &		...\\
+	60...380   &		...			  & 2,15 &		Null-Hypothese nicht abgelehnt\\
 	\hline
-	400   &		1,551055352   &	 2,15 &	Null-Hypothese nicht abgelenht\\
+	400   &		1,551055352   &	 2,15 &	Null-Hypothese nicht abgelehnt\\
 	\hline
-	420   &		0,540433623   &	 2,15 &	Null-Hypothese nicht abgelenht\\
+	420   &		0,540433623   &	 2,15 &	Null-Hypothese nicht abgelehnt\\
 	\hline
-	440   &		4,598993754   &	 2,15 &	Null-Hypothese abgehelhnt\\
+	440   &		4,598993754   &	 2,15 &	Null-Hypothese abgelehnt\\
 	\hline
-	460   &		3,17978148    &	 2,15 &	Null-Hypothese abgehelhnt\\
+	460   &		3,17978148    &	 2,15 &	Null-Hypothese abgelehnt\\
 	\hline
-	...   &		...			  &	 2,15 &	...\\
+	480...980   &		...			  &	 2,15 &	Null-Hypothese abgelehnt\\
 	\hline
-	1000   &		35,12686104	&  2,15 &	Null-Hypothese abgehelhnt\\
+	1000   &		35,12686104	&  2,15 &	Null-Hypothese abgelehnt\\
 	\hline
 	\end{tabular}\\
-	\caption[Ergebnisse Tailoring]{Ergebnisse des Tailorings: Benötigte Zeit gesamt und für hash-Funktion}
+	\caption[]{Ergebnisse Hypothesentest ''Algorithmus 1 schneller als Algorithmus 2''}
 \end{table}\
 
-\textbf{Algorithmus 3 schneller als Algorithmus 2}\\
+Folglich, kann bei einem angenommenen Signifikanzniveau von \(\alpha = 0,02\%\) erst ab einer Playlistgröße von \(n = 440\) angenommen werden, dass Algorithmus 1 eine geringere Laufzeit hat, als Algorithmus 2.\\
 
+\textbf{Algorithmus 3 schneller als Algorithmus 2}\\
+Das Verfahren für den linksseitigen Hypothesentest ist dem obigen analog.\\
+Es gelten Null-Hypothese:
+\begin{equation}
+H_0: \tilde{ \mu_3 } \ge \tilde{\mu_2}
+\end{equation}\
+und Alternativ-Hypothese
+\begin{equation}
+H_0: \tilde{ \mu_3 } < \tilde{\mu_2}
+\end{equation}\
+Das oben genutzte Signifikanzniveau von \(\alpha = 0,02\%\) soll auch hier angewendet werden. Es ergibt sich die folgende Tabelle:
+\begin{table}[h!]
+	\centering 
+	\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		n   &		\(t=\sqrt{n}\frac{\mu_d}{\sigma_d} \)				& \(t(0,98;29)\) &	Ergebnis\\
+		\hline
+		20   	&	4,184966485	& 2,15 &	Null-Hypothese abgelehnt\\
+		\hline
+		40   	&	-4,405691129	& 2,15 &	Null-Hypothese nicht abgelehnt\\
+		\hline
+		60...280   &		...			  & 2,15 &		Null-Hypothese nicht abgelehnt\\
+		\hline
+		300   &		1,822671007   &	 2,15 &	Null-Hypothese nicht abgelehnt\\
+		\hline
+		320   &		2,486409842   &	 2,15 &	Null-Hypothese abgelehnt\\
+		\hline
+		340...980   &		...			  &	 2,15 &	Null-Hypothese abgelehnt\\
+		\hline
+		1000   &		39,26755684	&  2,15 &	Null-Hypothese abgelehnt\\
+		\hline
+	\end{tabular}\\
+	\caption[]{Ergebnisse Hypothesentest ''Algorithmus 3 schneller als Algorithmus 2''}
+\end{table}\
+
+Folglich, kann bei einem angenommenen Signifikanzniveau von \(\alpha = 0,02\%\) erst ab einer Playlistgröße von \(n = 320\) und für die untersuchte Größe \(n = 20\) angenommen werden, dass Algorithmus 3 eine geringere Laufzeit hat, als Algorithmus 2.\\
 
 \textbf{Algorithmus 3 schneller als Algorithmus 1}\\
-Königsdisziplin.
+Diese Untersuchung erfolgt analog der zwei vorangegangenen.\\
+Es gelten Null-Hypothese:
+\begin{equation}
+H_0: \tilde{ \mu_3 } \ge \tilde{\mu_1}
+\end{equation}\
+und Alternativ-Hypothese
+\begin{equation}
+H_0: \tilde{ \mu_3 } < \tilde{\mu_1}
+\end{equation}\
+Das oben genutzte Signifikanzniveau von \(\alpha = 0,02\%\) soll weiterhin angewendet werden. Es ergibt sich die folgende Tabelle:
 
+\begin{table}[h!]
+	\centering 
+	\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		n   &		\(t=\sqrt{n}\frac{\mu_d}{\sigma_d} \)				& \(t(0,98;29)\) &	Ergebnis\\
+		\hline
+		20   	&	7,690375185	& 2,15 &	Null-Hypothese abgelehnt\\
+		\hline
+		40   	&	-2,382882348	& 2,15 &	Null-Hypothese nicht abgelehnt\\
+		\hline
+		60...180   	&	...	& 2,15 &	Null-Hypothese nicht abgelehnt\\
+		\hline
+		180   &			-0,568085214		  & 2,15 &		Null-Hypothese nicht abgelehnt\\
+		\hline
+		200   &		2,239280659  &	 2,15 &	Null-Hypothese abgelehnt\\
+		\hline
+		220   &	0,059793204	   &	 2,15 &	Null-Hypothese nicht abgelehnt\\
+		\hline
+		240...280   &		...			  &	 2,15 &	Null-Hypothese nicht abgelehnt\\
+		\hline
+		300   &		1,338695858	&  2,15 &	Null-Hypothese nicht abgelehnt\\
+		\hline
+		320   &		2,243603114	&  2,15 &	Null-Hypothese abgelehnt\\
+		\hline
+		340...980   &		...	&  2,15 &	Null-Hypothese abgelehnt\\
+		\hline
+		1000   &	8,43624219	&  2,15 &	Null-Hypothese abgelehnt\\
+		\hline
+	\end{tabular}\\
+	\caption[]{Ergebnisse Hypothesentest ''Algorithmus 3 schneller als Algorithmus 1'}
+\end{table}\
 
+Es kann also bei einem angenommenen Signifikanzniveau von \(\alpha = 0,02\%\) erst ab einer Playlistgröße von \(n = 320\) sowie für die untersuchten Größen \(n = 20\)  und \(n = 200\) angenommen werden, dass Algorithmus 3 eine geringere Laufzeit hat, als Algorithmus 1.\\
 
 \section{Fazit}
 
-wen schon py dann standard funktionen
+Neben dem erlangen von Kenntnissen über das Durchführen von Laufzeituntersuchungen zieht der Autor dieser Arbeit den folgenden Schluss:
 
+\begin{quotation}
+	''Wenn schon python, dann Standard-Funktionalitäten verwenden.''
+\end{quotation}
+
+\pagebreak
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.19)  2 FEB 2018 21:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.19)  3 FEB 2018 12:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1290,7 +1290,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--106
 
  []
 
-<Figures/Diag1.png, id=149, 737.75626pt x 582.175pt>
+<Figures/Diag1.png, id=134, 737.75626pt x 582.175pt>
 File: Figures/Diag1.png Graphic file (type png)
  <use Figures/Diag1.png>
 Package pdftex.def Info: Figures/Diag1.png used on input line 137.
@@ -1298,7 +1298,7 @@ Package pdftex.def Info: Figures/Diag1.png used on input line 137.
 LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <9> not available
 (Font)              Font shape `T1/iwona/b/n' tried instead on input line 138.
 
-[2 <./Figures/Diag1.png>] <Figures/Diag2.png, id=172, 1124.2pt x 521.95pt>
+[2 <./Figures/Diag1.png>] <Figures/Diag2.png, id=157, 1124.2pt x 521.95pt>
 File: Figures/Diag2.png Graphic file (type png)
 
 <use Figures/Diag2.png>
@@ -1310,47 +1310,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--163
  []
 
 
-Overfull \hbox (12.15974pt too wide) in paragraph at lines 181--183
+Overfull \hbox (12.15974pt too wide) in paragraph at lines 182--184
 \T1/pplj/m/n/10 Als An-wen-dungs-fall soll das dis-junk-te Ver-ei-ni-gen von Ti
 -teln meh-re-rer Spotify-Playlists
  []
 
 [3 <./Figures/Diag2.png>]
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 186.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 187.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 186.
+(Font)              scaled to size 7.65005pt on input line 187.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--203
+Underfull \hbox (badness 10000) in paragraph at lines 201--204
 
  []
 
 LaTeX Font Info:    Font shape `T1/iwona/bx/sc' in size <10> not available
-(Font)              Font shape `T1/iwona/b/sc' tried instead on input line 209.
+(Font)              Font shape `T1/iwona/b/sc' tried instead on input line 210.
 
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/b/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <9> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 215.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 216.
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <7> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 216.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 217.
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <6.25002> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 216.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 217.
 
-Overfull \hbox (0.9097pt too wide) in paragraph at lines 221--223
+Overfull \hbox (0.9097pt too wide) in paragraph at lines 222--224
 \T1/pplj/m/n/10 Stra-te-gie zur Kol-li-si-ons-auf-lö-sung ent-spricht der-je-ni
 -gen, die bei py-thon \T1/pplj/m/it/10 dict\T1/pplj/m/n/10 -Objekten
  []
@@ -1358,7 +1358,7 @@ Overfull \hbox (0.9097pt too wide) in paragraph at lines 221--223
 [4] [5] (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 294--296
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 
  []
 
@@ -1379,12 +1379,12 @@ Package xcolor Warning: Incompatible color definition on input line 6.
 Package xcolor Warning: Incompatible color definition on input line 6.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
 
-Overfull \hbox (1.42984pt too wide) in paragraph at lines 300--302
+Overfull \hbox (1.42984pt too wide) in paragraph at lines 301--303
 \T1/pplj/m/it/10 de/02_ImplementierungOhneVerbesserung\T1/pplj/m/n/10 . Zum Auf
 -ruf der Al-go-rith-men über die Kom-
  []
@@ -1393,121 +1393,116 @@ Overfull \hbox (1.42984pt too wide) in paragraph at lines 300--302
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (./call1.sh)
-Underfull \hbox (badness 10000) in paragraph at lines 317--319
+Underfull \hbox (badness 10000) in paragraph at lines 318--320
 
  []
 
 [6] (./call2.sh)
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
 
  []
 
 
-Overfull \hbox (12.85991pt too wide) in paragraph at lines 350--351
+Overfull \hbox (12.85991pt too wide) in paragraph at lines 351--352
 []\T1/pplj/m/n/10 Die re-sul-tie-ren-de Da-tei \T1/pplj/m/it/10 (Bei-spiels-wei
 -se ''ge-ne-ra-ted-Test-Da-ta100000_0.4dupFac_Run1.txt'')
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--357
+Underfull \hbox (badness 10000) in paragraph at lines 356--358
 
  []
 
 [7] (./call3.sh)
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--412
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 413--415
+Underfull \hbox (badness 10000) in paragraph at lines 414--416
 
  []
 
-<Figures/pro1.png, id=334, 1125.20375pt x 368.37625pt>
+<Figures/pro1.png, id=320, 1125.20375pt x 368.37625pt>
 File: Figures/pro1.png Graphic file (type png)
  <use Figures/pro1.png>
-Package pdftex.def Info: Figures/pro1.png used on input line 419.
+Package pdftex.def Info: Figures/pro1.png used on input line 420.
 (pdftex.def)             Requested size: 277.5pt x 90.84598pt.
 
-<Figures/pro2.png, id=335, 1120.185pt x 401.5pt>
+<Figures/pro2.png, id=321, 1120.185pt x 401.5pt>
 File: Figures/pro2.png Graphic file (type png)
  <use Figures/pro2.png>
-Package pdftex.def Info: Figures/pro2.png used on input line 428.
+Package pdftex.def Info: Figures/pro2.png used on input line 429.
 (pdftex.def)             Requested size: 277.5pt x 99.46191pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 432--434
+Underfull \hbox (badness 10000) in paragraph at lines 433--435
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 435--436
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
 
  []
 
 [9 <./Figures/pro1.png> <./Figures/pro2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 441--444
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
 
  []
 
 
-Overfull \hbox (18.44978pt too wide) in paragraph at lines 452--462
+Overfull \hbox (18.44978pt too wide) in paragraph at lines 451--461
  [][] 
  []
 
 
-Overfull \hbox (5.43976pt too wide) in paragraph at lines 466--467
+Overfull \hbox (5.43976pt too wide) in paragraph at lines 465--466
 []\T1/pplj/m/n/10 Abschlieÿend sei-en hier die Zeit-be-dar-fe für je einen Durc
 h-lauf ei-ner Verbesserungs-
  []
 
-<Figures/pro1fin.png, id=345, 975.645pt x 598.235pt>
+<Figures/pro1fin.png, id=332, 975.645pt x 598.235pt>
 File: Figures/pro1fin.png Graphic file (type png)
  <use Figures/pro1fin.png>
-Package pdftex.def Info: Figures/pro1fin.png used on input line 470.
+Package pdftex.def Info: Figures/pro1fin.png used on input line 469.
 (pdftex.def)             Requested size: 277.5pt x 170.15187pt.
 
 [10 <./Figures/pro1fin.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 481--482
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
-<Figures/pro2fin.png, id=356, 978.65625pt x 601.24625pt>
+<Figures/pro2fin.png, id=343, 978.65625pt x 601.24625pt>
 File: Figures/pro2fin.png Graphic file (type png)
 
 <use Figures/pro2fin.png>
-Package pdftex.def Info: Figures/pro2fin.png used on input line 486.
+Package pdftex.def Info: Figures/pro2fin.png used on input line 485.
 (pdftex.def)             Requested size: 277.5pt x 170.4854pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--494
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
 
  []
 
-<Figures/pro3fin.png, id=357, 971.63pt x 592.2125pt>
+<Figures/pro3fin.png, id=344, 971.63pt x 592.2125pt>
 File: Figures/pro3fin.png Graphic file (type png)
  <use Figures/pro3fin.png>
-Package pdftex.def Info: Figures/pro3fin.png used on input line 498.
+Package pdftex.def Info: Figures/pro3fin.png used on input line 497.
 (pdftex.def)             Requested size: 222.00226pt x 135.3114pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--507
+Underfull \hbox (badness 10000) in paragraph at lines 503--506
 
  []
 
-[11 <./Figures/pro2fin.png> <./Figures/pro3fin.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
-
- []
-
-(./pyCode2.py
+[11 <./Figures/pro2fin.png> <./Figures/pro3fin.png>] (./pyCode2.py
 
 Package xcolor Warning: Incompatible color definition on input line 3.
 
@@ -1658,122 +1653,100 @@ Package xcolor Warning: Incompatible color definition on input line 18.
 
 Package xcolor Warning: Incompatible color definition on input line 18.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 519--521
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 522--524
-
- []
-
-<Figures/tr1.png, id=369, 906.38625pt x 512.91624pt>
+) [12] <Figures/tr1.png, id=387, 906.38625pt x 512.91624pt>
 File: Figures/tr1.png Graphic file (type png)
- <use Figures/tr1.png>
-Package pdftex.def Info: Figures/tr1.png used on input line 548.
+
+<use Figures/tr1.png>
+Package pdftex.def Info: Figures/tr1.png used on input line 535.
 (pdftex.def)             Requested size: 258.99887pt x 146.56615pt.
-
-[12] <Figures/tr2.png, id=402, 904.37875pt x 511.9125pt>
+ <Figures/tr2.png, id=388, 904.37875pt x 511.9125pt>
 File: Figures/tr2.png Graphic file (type png)
- <use Figures/tr2.png>
-Package pdftex.def Info: Figures/tr2.png used on input line 561.
+
+<use Figures/tr2.png>
+Package pdftex.def Info: Figures/tr2.png used on input line 542.
 (pdftex.def)             Requested size: 258.99887pt x 146.59958pt.
-
-<Figures/tr3.png, id=403, 902.37125pt x 511.9125pt>
+ <Figures/tr3.png, id=389, 902.37125pt x 511.9125pt>
 File: Figures/tr3.png Graphic file (type png)
- <use Figures/tr3.png>
-Package pdftex.def Info: Figures/tr3.png used on input line 572.
+
+<use Figures/tr3.png>
+Package pdftex.def Info: Figures/tr3.png used on input line 547.
 (pdftex.def)             Requested size: 258.99887pt x 146.92764pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--588
-
+ [13 <./Figures/tr1.png> <./Figures/tr2.png> <./Figures/tr3.png>] [14]
+Overfull \hbox (24.58513pt too wide) in paragraph at lines 557--558
+[]\T1/pplj/m/n/10 Pro Messrei-he: Play-lists mit auf-stei-gen-der Titel-Anzahl 
+$\U/zeur/m/n/10 n \U/zeus/m/n/10 ½ f\U/zeur/m/n/10 5000\OT1/pplj/m/n/10 , \U/ze
+ur/m/n/10 10\OT1/pplj/m/n/10 .\U/zeur/m/n/10 000\OT1/pplj/m/n/10 , ..., \U/zeur
+/m/n/10 100\OT1/pplj/m/n/10 .\U/zeur/m/n/10 000\U/zeus/m/n/10 g$ 
  []
 
-[13 <./Figures/tr1.png> <./Figures/tr2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 589--590
-
- []
-
-<Figures/bp1.png, id=413, 1233.60875pt x 511.9125pt>
+<Figures/bp1.png, id=410, 1233.60875pt x 511.9125pt>
 File: Figures/bp1.png Graphic file (type png)
  <use Figures/bp1.png>
-Package pdftex.def Info: Figures/bp1.png used on input line 595.
+Package pdftex.def Info: Figures/bp1.png used on input line 568.
 (pdftex.def)             Requested size: 370.0pt x 153.53587pt.
 
-<Figures/bp2.png, id=414, 1117.17375pt x 473.77pt>
+<Figures/bp2.png, id=411, 1117.17375pt x 473.77pt>
 File: Figures/bp2.png Graphic file (type png)
  <use Figures/bp2.png>
-Package pdftex.def Info: Figures/bp2.png used on input line 600.
+Package pdftex.def Info: Figures/bp2.png used on input line 576.
 (pdftex.def)             Requested size: 370.0pt x 156.90845pt.
 
-<Figures/bp3.png, id=415, 1232.605pt x 519.9425pt>
+[15 <./Figures/bp1.png> <./Figures/bp2.png>]
+<Figures/bp3.png, id=420, 1232.605pt x 519.9425pt>
 File: Figures/bp3.png Graphic file (type png)
  <use Figures/bp3.png>
-Package pdftex.def Info: Figures/bp3.png used on input line 607.
+Package pdftex.def Info: Figures/bp3.png used on input line 586.
 (pdftex.def)             Requested size: 370.0pt x 156.07123pt.
 
-[14 <./Figures/tr3.png> <./Figures/bp1.png> <./Figures/bp2.png>]
-<Figures/bp4.png, id=426, 1233.60875pt x 505.89pt>
+<Figures/bp4.png, id=421, 1233.60875pt x 505.89pt>
 File: Figures/bp4.png Graphic file (type png)
  <use Figures/bp4.png>
-Package pdftex.def Info: Figures/bp4.png used on input line 612.
+Package pdftex.def Info: Figures/bp4.png used on input line 591.
 (pdftex.def)             Requested size: 370.0pt x 151.72957pt.
 
-<Figures/bp5.png, id=427, 1228.59pt x 512.91624pt>
+<Figures/bp5.png, id=422, 1228.59pt x 512.91624pt>
 File: Figures/bp5.png Graphic file (type png)
  <use Figures/bp5.png>
-Package pdftex.def Info: Figures/bp5.png used on input line 622.
+Package pdftex.def Info: Figures/bp5.png used on input line 601.
 (pdftex.def)             Requested size: 370.0pt x 154.47087pt.
 
-<Figures/bp6.png, id=428, 1234.6125pt x 510.90875pt>
+<Figures/bp6.png, id=423, 1234.6125pt x 510.90875pt>
 File: Figures/bp6.png Graphic file (type png)
  <use Figures/bp6.png>
-Package pdftex.def Info: Figures/bp6.png used on input line 627.
+Package pdftex.def Info: Figures/bp6.png used on input line 606.
 (pdftex.def)             Requested size: 370.0pt x 153.11009pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[15 <./Figures/bp3.png> <./Figures/bp4.png> <./Figures/bp5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 641--643
-
- []
-
-<Figures/compare1.png, id=439, 1071.00125pt x 616.3025pt>
+[16 <./Figures/bp3.png> <./Figures/bp4.png>] [17 <./Figures/bp5.png> <./Figures
+/bp6.png>] <Figures/compare1.png, id=440, 1071.00125pt x 616.3025pt>
 File: Figures/compare1.png Graphic file (type png)
 
 <use Figures/compare1.png>
-Package pdftex.def Info: Figures/compare1.png used on input line 647.
+Package pdftex.def Info: Figures/compare1.png used on input line 622.
 (pdftex.def)             Requested size: 370.0pt x 212.9161pt.
- [16 <./Figures/bp6.png> <./Figures/compare1.png>]
-<Figures/compare2.png, id=448, 1057.9525pt x 595.22375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--626
+
+ []
+
+<Figures/compare2.png, id=441, 1057.9525pt x 595.22375pt>
 File: Figures/compare2.png Graphic file (type png)
 
 <use Figures/compare2.png>
-Package pdftex.def Info: Figures/compare2.png used on input line 666.
+Package pdftex.def Info: Figures/compare2.png used on input line 635.
 (pdftex.def)             Requested size: 370.0pt x 208.16795pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 681--683
+Overfull \hbox (9.02979pt too wide) in paragraph at lines 631--639
+\T1/pplj/m/n/10 samt lässt sich aus der gra-fi-schen Be-trach-tung die fol-gen-
+de Ord-nung der Algotithmen-
+ []
+
+[18 <./Figures/compare1.png>] [19 <./Figures/compare2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 697--698
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--686
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 692--693
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 695--703
+Underfull \hbox (badness 10000) in paragraph at lines 734--735
 
  []
 
@@ -1781,11 +1754,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 695--703
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 733--734
+Underfull \hbox (badness 10000) in paragraph at lines 780--781
 
  []
 
-[17 <./Figures/compare2.png>] (./AE_Doku.bbl
+[20] [21] (./AE_Doku.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.50006pt on input line 11.
 
@@ -1801,25 +1774,25 @@ pro-fi-le and cpro-fi-
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
- [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 804.
+ [22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 804.
  (./AE_Doku.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 804.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 804.
 Package rerunfilecheck Info: File `AE_Doku.out' has not changed.
-(rerunfilecheck)             Checksum: 1D7FACD7219E7A74596F1BF0B9B22E9C;2083.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
+(rerunfilecheck)             Checksum: 25643900CC52D3C39ECC02D514478447;1856.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 804.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18683 strings out of 492995
- 319664 string characters out of 6132703
- 686572 words of memory out of 5000000
- 21633 multiletter control sequences out of 15000+600000
+ 18697 strings out of 492995
+ 319779 string characters out of 6132703
+ 686596 words of memory out of 5000000
+ 21631 multiletter control sequences out of 15000+600000
  112363 words of font info for 153 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  62i,24n,87p,8818b,14707s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1843,10 +1816,10 @@ s/type1/nowacki/iwona/iwonar.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/u
 rw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/pala
 tino/uplri8a.pfb>
-Output written on AE_Doku.pdf (18 pages, 750682 bytes).
+Output written on AE_Doku.pdf (22 pages, 761126 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 502 compressed objects within 6 object streams
- 225 named destinations out of 1000 (max. 500000)
- 22835 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 606 PDF objects out of 1000 (max. 8388607)
+ 520 compressed objects within 6 object streams
+ 241 named destinations out of 1000 (max. 500000)
+ 22811 words of extra memory for PDF output out of 24883 (max. 10000000)
 
